@@ -1,0 +1,6 @@
+#include "Pods-Ios_Player_Lib.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/Ios_Player_Lib" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Ios_Player_Lib"
+LIBRARY_SEARCH_PATHS = ${PODS_IOS_PLAYER_LIB_LIBRARY_SEARCH_PATHS}
+OTHER_LDFLAGS = ${PODS_IOS_PLAYER_LIB_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}

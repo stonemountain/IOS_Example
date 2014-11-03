@@ -1,3 +1,2 @@
 iOS player example;
-the example of using cocoapods and smvp client api.
-You should run pod install first!
+You may need run 'pod install' or 'pod update' first.

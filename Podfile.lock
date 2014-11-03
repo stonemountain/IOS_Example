@@ -1,0 +1,10 @@
+PODS:
+  - Ios_Player_Lib (0.0.7)
+
+DEPENDENCIES:
+  - Ios_Player_Lib (~> 0.0.7)
+
+SPEC CHECKSUMS:
+  Ios_Player_Lib: 95dcd20f34d30c19c7b2ec376bb4ecc8adf0ef89
+
+COCOAPODS: 0.34.4
