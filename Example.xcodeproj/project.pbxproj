@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED6B1C34A568C8A6F2DF5BC1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2BC6B58731FCD05913A15D /* libPods.a */; };
 		F911B27F18750A1700778B05 /* SmvpVideo+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = F911B27E18750A1700778B05 /* SmvpVideo+Image.m */; };
 		F920445F187697CD00DCB637 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F920445E187697CD00DCB637 /* AVFoundation.framework */; };
 		F9204461187697DC00DCB637 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9204460187697DC00DCB637 /* MediaPlayer.framework */; };
@@ -28,7 +29,6 @@
 		F9933F71186C182D00283A37 /* VideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9933F70186C182D00283A37 /* VideoListViewController.m */; };
 		F9C73DA0186D1DCD004B695C /* SmvpHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C73D9F186D1DCD004B695C /* SmvpHelper.m */; };
 		F9C73DBE186D5D24004B695C /* VideoDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C73DBD186D5D24004B695C /* VideoDetailsViewController.m */; };
-		F9CCA8C7191B1C1800018887 /* libSmvpClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CCA8C6191B1C1800018887 /* libSmvpClient.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		114B0EF9C9A4F75B1C853E01 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7CFD02973A4B26012DE9678B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9D2BC6B58731FCD05913A15D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F911B27D18750A1700778B05 /* SmvpVideo+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SmvpVideo+Image.h"; sourceTree = "<group>"; };
 		F911B27E18750A1700778B05 /* SmvpVideo+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SmvpVideo+Image.m"; sourceTree = "<group>"; };
 		F920445E187697CD00DCB637 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -72,37 +75,6 @@
 		F9C73D9F186D1DCD004B695C /* SmvpHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmvpHelper.m; sourceTree = "<group>"; };
 		F9C73DBC186D5D24004B695C /* VideoDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDetailsViewController.h; sourceTree = "<group>"; };
 		F9C73DBD186D5D24004B695C /* VideoDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDetailsViewController.m; sourceTree = "<group>"; };
-		F9CCA8A8191B1BF500018887 /* SmvpAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpAPIClient.h; sourceTree = "<group>"; };
-		F9CCA8A9191B1BF500018887 /* SmvpBasicMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpBasicMethod.h; sourceTree = "<group>"; };
-		F9CCA8AA191B1BF500018887 /* SmvpCategoriesHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpCategoriesHandler.h; sourceTree = "<group>"; };
-		F9CCA8AB191B1BF500018887 /* SmvpCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpCategory.h; sourceTree = "<group>"; };
-		F9CCA8AC191B1BF500018887 /* SmvpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpClient.h; sourceTree = "<group>"; };
-		F9CCA8AD191B1BF500018887 /* SmvpEntriesHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpEntriesHandler.h; sourceTree = "<group>"; };
-		F9CCA8AE191B1BF500018887 /* SmvpFilePart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpFilePart.h; sourceTree = "<group>"; };
-		F9CCA8AF191B1BF500018887 /* SmvpFullScreenPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpFullScreenPlayerView.h; sourceTree = "<group>"; };
-		F9CCA8B0191B1BF500018887 /* SmvpFullScreenPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpFullScreenPlayerViewController.h; sourceTree = "<group>"; };
-		F9CCA8B1191B1BF500018887 /* SmvpGetMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpGetMethod.h; sourceTree = "<group>"; };
-		F9CCA8B2191B1BF500018887 /* SmvpHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpHttpClient.h; sourceTree = "<group>"; };
-		F9CCA8B3191B1BF500018887 /* SmvpHttpConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpHttpConnection.h; sourceTree = "<group>"; };
-		F9CCA8B4191B1BF500018887 /* SmvpHttpMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpHttpMethod.h; sourceTree = "<group>"; };
-		F9CCA8B5191B1BF500018887 /* SmvpHttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpHttpResponse.h; sourceTree = "<group>"; };
-		F9CCA8B6191B1BF500018887 /* SmvpImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpImage.h; sourceTree = "<group>"; };
-		F9CCA8B7191B1BF500018887 /* SmvpImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpImageDownloader.h; sourceTree = "<group>"; };
-		F9CCA8B8191B1BF500018887 /* SmvpMultipartMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpMultipartMethod.h; sourceTree = "<group>"; };
-		F9CCA8B9191B1BF500018887 /* SmvpPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpPart.h; sourceTree = "<group>"; };
-		F9CCA8BA191B1BF500018887 /* SmvpPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpPlayerView.h; sourceTree = "<group>"; };
-		F9CCA8BB191B1BF500018887 /* SmvpPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpPlayerViewController.h; sourceTree = "<group>"; };
-		F9CCA8BC191B1BF500018887 /* SmvpPostMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpPostMethod.h; sourceTree = "<group>"; };
-		F9CCA8BD191B1BF500018887 /* SmvpRendition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpRendition.h; sourceTree = "<group>"; };
-		F9CCA8BE191B1BF500018887 /* SmvpRenditionUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpRenditionUrl.h; sourceTree = "<group>"; };
-		F9CCA8BF191B1BF500018887 /* SmvpStringPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpStringPart.h; sourceTree = "<group>"; };
-		F9CCA8C0191B1BF500018887 /* SmvpVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpVideo.h; sourceTree = "<group>"; };
-		F9CCA8C1191B1BF500018887 /* SmvpVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpVideoPlayer.h; sourceTree = "<group>"; };
-		F9CCA8C2191B1BF500018887 /* SmvpVideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpVideoPlayerView.h; sourceTree = "<group>"; };
-		F9CCA8C3191B1BF500018887 /* SmvpVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpVideoPlayerViewController.h; sourceTree = "<group>"; };
-		F9CCA8C4191B1BF500018887 /* SmvpVideoPlayInfor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpVideoPlayInfor.h; sourceTree = "<group>"; };
-		F9CCA8C5191B1BF500018887 /* SmvpVideoUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmvpVideoUploader.h; sourceTree = "<group>"; };
-		F9CCA8C6191B1C1800018887 /* libSmvpClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSmvpClient.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +88,7 @@
 				F9933F2C186C16EE00283A37 /* CoreGraphics.framework in Frameworks */,
 				F9933F2E186C16EE00283A37 /* UIKit.framework in Frameworks */,
 				F9933F2A186C16EE00283A37 /* Foundation.framework in Frameworks */,
-				F9CCA8C7191B1C1800018887 /* libSmvpClient.a in Frameworks */,
+				ED6B1C34A568C8A6F2DF5BC1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD5732A7B591302940A4F0D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CFD02973A4B26012DE9678B /* Pods.debug.xcconfig */,
+				114B0EF9C9A4F75B1C853E01 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F9933F1D186C16EE00283A37 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +121,7 @@
 				F9933F4E186C16EF00283A37 /* ExampleTests */,
 				F9933F28186C16EE00283A37 /* Frameworks */,
 				F9933F27186C16EE00283A37 /* Products */,
+				BD5732A7B591302940A4F0D0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,7 +137,6 @@
 		F9933F28186C16EE00283A37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F9CCA8C6191B1C1800018887 /* libSmvpClient.a */,
 				F9204462187697FB00DCB637 /* CoreMedia.framework */,
 				F9204460187697DC00DCB637 /* MediaPlayer.framework */,
 				F920445E187697CD00DCB637 /* AVFoundation.framework */,
@@ -163,6 +144,7 @@
 				F9933F2B186C16EE00283A37 /* CoreGraphics.framework */,
 				F9933F2D186C16EE00283A37 /* UIKit.framework */,
 				F9933F48186C16EF00283A37 /* XCTest.framework */,
+				9D2BC6B58731FCD05913A15D /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -170,7 +152,6 @@
 		F9933F2F186C16EE00283A37 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				F9CCA8A7191B1BF500018887 /* SmvpClient */,
 				F9933F38186C16EE00283A37 /* AppDelegate.h */,
 				F9933F39186C16EE00283A37 /* AppDelegate.m */,
 				F9933F3B186C16EE00283A37 /* Main.storyboard */,
@@ -219,43 +200,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F9CCA8A7191B1BF500018887 /* SmvpClient */ = {
-			isa = PBXGroup;
-			children = (
-				F9CCA8A8191B1BF500018887 /* SmvpAPIClient.h */,
-				F9CCA8A9191B1BF500018887 /* SmvpBasicMethod.h */,
-				F9CCA8AA191B1BF500018887 /* SmvpCategoriesHandler.h */,
-				F9CCA8AB191B1BF500018887 /* SmvpCategory.h */,
-				F9CCA8AC191B1BF500018887 /* SmvpClient.h */,
-				F9CCA8AD191B1BF500018887 /* SmvpEntriesHandler.h */,
-				F9CCA8AE191B1BF500018887 /* SmvpFilePart.h */,
-				F9CCA8AF191B1BF500018887 /* SmvpFullScreenPlayerView.h */,
-				F9CCA8B0191B1BF500018887 /* SmvpFullScreenPlayerViewController.h */,
-				F9CCA8B1191B1BF500018887 /* SmvpGetMethod.h */,
-				F9CCA8B2191B1BF500018887 /* SmvpHttpClient.h */,
-				F9CCA8B3191B1BF500018887 /* SmvpHttpConnection.h */,
-				F9CCA8B4191B1BF500018887 /* SmvpHttpMethod.h */,
-				F9CCA8B5191B1BF500018887 /* SmvpHttpResponse.h */,
-				F9CCA8B6191B1BF500018887 /* SmvpImage.h */,
-				F9CCA8B7191B1BF500018887 /* SmvpImageDownloader.h */,
-				F9CCA8B8191B1BF500018887 /* SmvpMultipartMethod.h */,
-				F9CCA8B9191B1BF500018887 /* SmvpPart.h */,
-				F9CCA8BA191B1BF500018887 /* SmvpPlayerView.h */,
-				F9CCA8BB191B1BF500018887 /* SmvpPlayerViewController.h */,
-				F9CCA8BC191B1BF500018887 /* SmvpPostMethod.h */,
-				F9CCA8BD191B1BF500018887 /* SmvpRendition.h */,
-				F9CCA8BE191B1BF500018887 /* SmvpRenditionUrl.h */,
-				F9CCA8BF191B1BF500018887 /* SmvpStringPart.h */,
-				F9CCA8C0191B1BF500018887 /* SmvpVideo.h */,
-				F9CCA8C1191B1BF500018887 /* SmvpVideoPlayer.h */,
-				F9CCA8C2191B1BF500018887 /* SmvpVideoPlayerView.h */,
-				F9CCA8C3191B1BF500018887 /* SmvpVideoPlayerViewController.h */,
-				F9CCA8C4191B1BF500018887 /* SmvpVideoPlayInfor.h */,
-				F9CCA8C5191B1BF500018887 /* SmvpVideoUploader.h */,
-			);
-			path = SmvpClient;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9933F58186C16EF00283A37 /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
+				5E689A9B43E25144E43E7362 /* Check Pods Manifest.lock */,
 				F9933F22186C16EE00283A37 /* Sources */,
 				F9933F23186C16EE00283A37 /* Frameworks */,
 				F9933F24186C16EE00283A37 /* Resources */,
+				A3B75396C726F389C905C6F1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -347,6 +293,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E689A9B43E25144E43E7362 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A3B75396C726F389C905C6F1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F9933F22186C16EE00283A37 /* Sources */ = {
@@ -481,38 +460,44 @@
 		};
 		F9933F59186C16EF00283A37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CFD02973A4B26012DE9678B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
-				INFOPLIST_FILE = "Example/Example-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/SmvpClient-eczshhjwzmbqrnaisrabmkvdysry/Build/Products/Debug-iphonesimulator",
-					/Users/julien/Work/smios/Example,
-					"$(PROJECT_DIR)",
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Ios_Player_Lib\"",
 				);
+				INFOPLIST_FILE = "Example/Example-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(PODS_ROOT)/Ios_Player_Lib\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		F9933F5A186C16EF00283A37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 114B0EF9C9A4F75B1C853E01 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
-				INFOPLIST_FILE = "Example/Example-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/SmvpClient-eczshhjwzmbqrnaisrabmkvdysry/Build/Products/Debug-iphonesimulator",
-					/Users/julien/Work/smios/Example,
-					"$(PROJECT_DIR)",
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Ios_Player_Lib\"",
 				);
+				INFOPLIST_FILE = "Example/Example-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(PODS_ROOT)/Ios_Player_Lib\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
