@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Video List View Controller - 我的视频-->
+        <!--Video List View Controller - 我的视-->
         <scene sceneID="Gqk-pj-UVI">
             <objects>
-                <tableViewController id="ifg-nh-ccN" customClass="VideoListViewController" sceneMemberID="viewController">
+                <tableViewController id="ifg-nh-ccN" userLabel="Video List View Controller - 我的视" customClass="VideoListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vxa-dK-rxA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,11 +63,11 @@
                             <outlet property="delegate" destination="ifg-nh-ccN" id="YcN-pd-UMi"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="我的视频" id="Xka-5g-446"/>
+                    <navigationItem key="navigationItem" title="我的视频" id="Xka-5g-446" userLabel="Navigation Item - 我的视"/>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="QuM-C3-Slw">
                         <autoresizingMask key="autoresizingMask"/>
                         <connections>
-                            <action selector="fetchVideos" destination="ifg-nh-ccN" eventType="valueChanged" id="A9P-wr-zax"/>
+                            <action selector="fetchVideos" destination="ifg-nh-ccN" eventType="valueChanged" id="Fil-a3-5cj"/>
                         </connections>
                     </refreshControl>
                 </tableViewController>

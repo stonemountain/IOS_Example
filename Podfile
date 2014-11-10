@@ -1,2 +1,2 @@
 platform :ios
-pod 'Ios_Player_Lib', '~>1.0.9'
+pod 'Ios_Player_Lib', '~>1.1.0'
