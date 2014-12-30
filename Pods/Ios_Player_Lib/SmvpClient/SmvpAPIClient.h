@@ -13,12 +13,17 @@
 #import "SmvpVideo.h"
 #import "SmvpEntriesHandler.h"
 #import "SmvpCategoriesHandler.h"
-
-@interface SmvpAPIClient : NSObject
+@class HTTPServer;
+@interface SmvpAPIClient : NSObject{
+//    HTTPServer *httpServer;
+}
 
 @property(readwrite, strong) NSString *token;
+@property(readwrite, strong) HTTPServer *httpServer;
 @property(readwrite, strong) NSString *apiUrl;
 @property(readwrite, strong) NSString *scope;
+@property(readwrite, strong) NSString *rootPath;
+@property(readwrite) UInt16 port;
 @property(readonly, strong) SmvpEntriesHandler *entriesHandler;
 @property(readonly, strong) SmvpCategoriesHandler *categoriesHandler;
 

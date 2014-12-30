@@ -9,6 +9,7 @@
 #import "VideoDetailsViewController.h"
 #import "SmvpPlayerViewController.h"
 #import "SmvpHelper.h"
+//#import "SmvpVideoDownloader.h"
 
 @interface VideoDetailsViewController ()
 
@@ -22,8 +23,17 @@
 
 - (void)viewDidLoad
 {
+    UIBarButtonItem *saveButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveVideo)];
+	self.navigationItem.rightBarButtonItem = saveButton;
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+}
+
+-(void)saveVideo
+{
+    NSError *error = nil;
+    SmvpRendition *rendition = [[[SmvpHelper apiClient].entriesHandler getPlayInfor:self.video.entryId error:&error].renditions objectAtIndex:0];
+    SmvpVideoDownloader *downLoader = [[SmvpVideoDownloader alloc] initWithRendition:rendition client:[SmvpHelper apiClient] delegate:self];
+    [downLoader start];
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,6 +49,10 @@
         CGRect region = CGRectMake(0, 0, 320, 240);
         [ivc prepareVideo:self.video withApiClient:[SmvpHelper apiClient] inRegion:region];
     }
+}
+
+-(void)dealloc{
+    
 }
 
 

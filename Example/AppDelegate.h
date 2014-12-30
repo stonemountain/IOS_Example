@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SmvpVideoDownloader.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+@interface AppDelegate : UIResponder <UIApplicationDelegate,SmvpVideoDownloaderDelegate>
 @property (strong, nonatomic) UIWindow *window;
 
 @end

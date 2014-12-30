@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACABDD191A481B0B00E4475D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACABDD181A481B0B00E4475D /* CFNetwork.framework */; };
 		ED6B1C34A568C8A6F2DF5BC1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2BC6B58731FCD05913A15D /* libPods.a */; };
 		F911B27F18750A1700778B05 /* SmvpVideo+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = F911B27E18750A1700778B05 /* SmvpVideo+Image.m */; };
 		F920445F187697CD00DCB637 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F920445E187697CD00DCB637 /* AVFoundation.framework */; };
@@ -45,6 +46,7 @@
 		114B0EF9C9A4F75B1C853E01 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7CFD02973A4B26012DE9678B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9D2BC6B58731FCD05913A15D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACABDD181A481B0B00E4475D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		F911B27D18750A1700778B05 /* SmvpVideo+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SmvpVideo+Image.h"; sourceTree = "<group>"; };
 		F911B27E18750A1700778B05 /* SmvpVideo+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SmvpVideo+Image.m"; sourceTree = "<group>"; };
 		F920445E187697CD00DCB637 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -82,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACABDD191A481B0B00E4475D /* CFNetwork.framework in Frameworks */,
 				F9204463187697FC00DCB637 /* CoreMedia.framework in Frameworks */,
 				F9204461187697DC00DCB637 /* MediaPlayer.framework in Frameworks */,
 				F920445F187697CD00DCB637 /* AVFoundation.framework in Frameworks */,
@@ -105,6 +108,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC35AE7D1A3A94ED00042952 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 		BD5732A7B591302940A4F0D0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +147,7 @@
 		F9933F28186C16EE00283A37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ACABDD181A481B0B00E4475D /* CFNetwork.framework */,
 				F9204462187697FB00DCB637 /* CoreMedia.framework */,
 				F9204460187697DC00DCB637 /* MediaPlayer.framework */,
 				F920445E187697CD00DCB637 /* AVFoundation.framework */,
@@ -152,6 +163,7 @@
 		F9933F2F186C16EE00283A37 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				AC35AE7D1A3A94ED00042952 /* iPad */,
 				F9933F38186C16EE00283A37 /* AppDelegate.h */,
 				F9933F39186C16EE00283A37 /* AppDelegate.m */,
 				F9933F3B186C16EE00283A37 /* Main.storyboard */,
@@ -249,6 +261,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = smvp;
 				TargetAttributes = {
+					F9933F25186C16EE00283A37 = {
+						DevelopmentTeam = 7FC7YN3B2L;
+					};
 					F9933F46186C16EF00283A37 = {
 						TestTargetID = F9933F25186C16EE00283A37;
 					};
@@ -391,7 +406,7 @@
 		F9933F56186C16EF00283A37 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -429,7 +444,7 @@
 		F9933F57186C16EF00283A37 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -462,9 +477,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7CFD02973A4B26012DE9678B /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -472,10 +490,19 @@
 					"\"${PODS_ROOT}/Headers/Public/Ios_Player_Lib\"",
 				);
 				INFOPLIST_FILE = "Example/Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = "\"$(PODS_ROOT)/Ios_Player_Lib\"";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"Pods-Ios_Player_Lib\"",
+					"-l\"SmvpClient\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "arm64 armv7 armv7s i386";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 arm64 armv7s i386 x86_64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -484,9 +511,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 114B0EF9C9A4F75B1C853E01 /* Pods.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -494,10 +525,18 @@
 					"\"${PODS_ROOT}/Headers/Public/Ios_Player_Lib\"",
 				);
 				INFOPLIST_FILE = "Example/Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = "\"$(PODS_ROOT)/Ios_Player_Lib\"";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"Pods-Ios_Player_Lib\"",
+					"-l\"SmvpClient\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "arm64 armv7 armv7s i386";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -552,7 +591,7 @@
 				F9933F57186C16EF00283A37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		F9933F58186C16EF00283A37 /* Build configuration list for PBXNativeTarget "Example" */ = {
 			isa = XCConfigurationList;
@@ -561,7 +600,7 @@
 				F9933F5A186C16EF00283A37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		F9933F5B186C16EF00283A37 /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -570,7 +609,7 @@
 				F9933F5D186C16EF00283A37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

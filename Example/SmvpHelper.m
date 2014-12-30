@@ -14,6 +14,7 @@ static SmvpAPIClient *_apiClient;
 
 + (SmvpAPIClient *) apiClient {
     if (!_apiClient) {
+        
        _apiClient = [[SmvpAPIClient alloc] initWithToken:@"SJQ-7zgT_lOwaq816PPkkZqNDfl8TlaXoARoAQxaXAE="];
     }
     return _apiClient;

@@ -1,10 +1,10 @@
 PODS:
-  - Ios_Player_Lib (1.1.0)
+  - Ios_Player_Lib (1.1.8)
 
 DEPENDENCIES:
-  - Ios_Player_Lib (~> 1.1.0)
+  - Ios_Player_Lib (~> 1.1.8)
 
 SPEC CHECKSUMS:
-  Ios_Player_Lib: 20580365039282fb25d990035cadc4812eafa50f
+  Ios_Player_Lib: fc25e6954924b403f787eaed1a885334b28a2dfc
 
-COCOAPODS: 0.34.4
+COCOAPODS: 0.35.0

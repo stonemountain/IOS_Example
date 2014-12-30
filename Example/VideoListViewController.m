@@ -32,7 +32,6 @@
 	
 	UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(selectVideoToUpload)];
 	self.navigationItem.rightBarButtonItem = addButton;
-    
     self.imageDownloadsInProgress = [NSMutableDictionary dictionary];
     [self fetchVideos];
 }
@@ -163,7 +162,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    int count = [self.videos count];
+    NSUInteger count = [self.videos count];
     if (count == 0) {
         return 1;
     } else {

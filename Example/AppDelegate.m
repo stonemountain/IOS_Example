@@ -7,12 +7,19 @@
 //
 
 #import "AppDelegate.h"
+#import "SmvpVideoDownloader.h"
+#import "SmvpHelper.h"
+#import "SmvpRendition.h"
+#import "SmvpEntriesHandler.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+//    NSError *error = nil;
+//    SmvpRendition *rendition = [[[SmvpHelper apiClient].entriesHandler getPlayInfor:@"610289838925994120" error:&error].renditions objectAtIndex:0];
+//    SmvpVideoDownloader *downLoader = [[SmvpVideoDownloader alloc] initWithRendition:rendition client:[SmvpHelper apiClient] delegate:self];
+//   [downLoader start];
     return YES;
 }
 							

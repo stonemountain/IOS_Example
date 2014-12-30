@@ -33,23 +33,27 @@
 
 - (SmvpVideo *) update: (NSDictionary *) entry error:(NSError **) error;
 
-- (void) deleteEntry: (NSString *) idString error:(NSError **) error;
+- (id) deleteEntry: (NSString *) idString error:(NSError **) error;
 
-- (void) deleteList: (NSArray *) idArray error:(NSError **) error;
+- (id) deleteList: (NSArray *) idArray error:(NSError **) error;
 
-- (void) activate: (NSString *) idString error:(NSError **) error;
+- (id) activate: (NSString *) idString error:(NSError **) error;
 
-- (void) activateList: (NSArray *) idArray error:(NSError **) error;
+- (id) activateList: (NSArray *) idArray error:(NSError **) error;
 
-- (void) deactivate: (NSString *) idString error:(NSError **) error;
+- (id) deactivate: (NSString *) idString error:(NSError **) error;
 
-- (void) deactivateList: (NSArray *) idArray error:(NSError **) error;
+- (id) deactivateList: (NSArray *) idArray error:(NSError **) error;
 
-- (void) setCategory: (NSArray *) idArray catetory: (NSString *) category_id error:(NSError **) error;
+- (id) setCategory: (NSArray *) idArray catetory: (NSString *) category_id error:(NSError **) error;
 
-- (void) removeCategory: (NSArray *) idArray catetory: (NSString *) category_id error:(NSError **) error;
+- (id) removeCategory: (NSArray *) idArray catetory: (NSString *) category_id error:(NSError **) error;
 
 - (NSURL *) getM3U8URL:(NSString *) idString;
+
+- (NSURL *) getM3U8URL:(NSString *) idString withRendition:(NSString *)renditionid;
+
+- (NSURL *) getRemoteM3U8URL:(NSString *) idString;
 
 - (SmvpVideoPlayInfor *) getPlayInfor:(NSString *) idString error:(NSError **) error;
 

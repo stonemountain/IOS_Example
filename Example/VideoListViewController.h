@@ -11,8 +11,9 @@
 #import "SmvpVideoUploader.h"
 #import "SmvpUploadView.h"
 #import "SmvpHttpConnection.h"
+#import "SmvpVideoDownloader.h"
 
-@interface VideoListViewController : UITableViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, SmvpVideoUploaderDelegate, SmvpUploadProgressDelegate>
+@interface VideoListViewController : UITableViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, SmvpVideoUploaderDelegate, SmvpUploadProgressDelegate, SmvpVideoDownloaderDelegate>
 
 @property(nonatomic, strong) NSArray *videos;
 @property(nonatomic, strong) SmvpUploadView *uploadView;

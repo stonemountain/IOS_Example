@@ -14,7 +14,7 @@
 
 @interface SmvpVideoUploader : NSObject <SmvpHttpConnectionDelegate>
 
-@property(nonatomic, weak) id<SmvpVideoUploaderDelegate> delegate;
+@property(nonatomic, strong) id<SmvpVideoUploaderDelegate> delegate;
 @property(nonatomic, strong) NSURL *fileURL;
 @property(nonatomic, strong) SmvpAPIClient *apiClient;
 - (instancetype) initWithFile:(NSURL *) file apiClient:(SmvpAPIClient *)client delegate:(id<SmvpVideoUploaderDelegate>) uploadDelegate;

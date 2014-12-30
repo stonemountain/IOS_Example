@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "SmvpVideo+Image.h"
+#import "SmvpVideoDownloader.h"
 
-@interface VideoDetailsViewController : UIViewController
+@interface VideoDetailsViewController : UIViewController <SmvpVideoDownloaderDelegate>
 
 @property(nonatomic, strong) SmvpVideo *video;
 
