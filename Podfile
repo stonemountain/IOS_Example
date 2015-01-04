@@ -1,2 +1,2 @@
 platform :ios, '7.0'
-pod 'Ios_Player_Lib', '~>1.1.8'
+pod 'IOS_SmvpSDK_Library', '~>1.2.0'

@@ -487,15 +487,15 @@
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/Ios_Player_Lib\"",
+					"\"${PODS_ROOT}/Headers/Public/IOS_SmvpSDK_Library\"",
 				);
 				INFOPLIST_FILE = "Example/Example-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = "\"$(PODS_ROOT)/Ios_Player_Lib\"";
+				LIBRARY_SEARCH_PATHS = "\"$(PODS_ROOT)/IOS_SmvpSDK_Library\"";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
-					"-l\"Pods-Ios_Player_Lib\"",
+					"-l\"Pods-IOS_SmvpSDK_Library\"",
 					"-l\"SmvpClient\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -522,14 +522,14 @@
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/Ios_Player_Lib\"",
+					"\"${PODS_ROOT}/Headers/Public/IOS_SmvpSDK_Library\"",
 				);
 				INFOPLIST_FILE = "Example/Example-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = "\"$(PODS_ROOT)/Ios_Player_Lib\"";
+				LIBRARY_SEARCH_PATHS = "\"$(PODS_ROOT)/IOS_SmvpSDK_Library\"";
 				OTHER_LDFLAGS = (
 					"-ObjC",
-					"-l\"Pods-Ios_Player_Lib\"",
+					"-l\"Pods-IOS_SmvpSDK_Library\"",
 					"-l\"SmvpClient\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";

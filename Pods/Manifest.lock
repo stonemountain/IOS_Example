@@ -1,10 +1,10 @@
 PODS:
-  - Ios_Player_Lib (1.1.8)
+  - IOS_SmvpSDK_Library (1.2.0)
 
 DEPENDENCIES:
-  - Ios_Player_Lib (~> 1.1.8)
+  - IOS_SmvpSDK_Library (~> 1.2.0)
 
 SPEC CHECKSUMS:
-  Ios_Player_Lib: fc25e6954924b403f787eaed1a885334b28a2dfc
+  IOS_SmvpSDK_Library: bde3da9a74444ccf3a2b39f2db7bc60e71536114
 
 COCOAPODS: 0.35.0

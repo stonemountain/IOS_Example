@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-Ios_Player_Lib.xcscheme</key>
+		<key>Pods-IOS_SmvpSDK_Library.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>B2C57DBDD870654D592E723D</key>
+		<key>684A04A8506776BC87F1EEAF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D221176F93E6284AF17F31EB</key>
+		<key>8EA2898E66583E14D617A31B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

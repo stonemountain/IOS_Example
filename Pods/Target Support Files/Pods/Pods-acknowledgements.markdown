@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## Ios_Player_Lib
+## IOS_SmvpSDK_Library
 
 The MIT License (MIT)
 

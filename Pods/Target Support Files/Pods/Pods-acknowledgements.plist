@@ -38,7 +38,7 @@ SOFTWARE.
 
 </string>
 			<key>Title</key>
-			<string>Ios_Player_Lib</string>
+			<string>IOS_SmvpSDK_Library</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
