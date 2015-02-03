@@ -16,10 +16,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    NSError *error = nil;
-//    SmvpRendition *rendition = [[[SmvpHelper apiClient].entriesHandler getPlayInfor:@"610289838925994120" error:&error].renditions objectAtIndex:0];
-//    SmvpVideoDownloader *downLoader = [[SmvpVideoDownloader alloc] initWithRendition:rendition client:[SmvpHelper apiClient] delegate:self];
-//   [downLoader start];
     return YES;
 }
 							

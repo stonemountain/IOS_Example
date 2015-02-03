@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACA1681E1A78D8B6002DE0AD /* VideoDownloaderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA1681D1A78D8B6002DE0AD /* VideoDownloaderListViewController.m */; };
+		ACA168211A79D769002DE0AD /* DownloaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA168201A79D769002DE0AD /* DownloaderTableViewCell.m */; };
 		ACABDD191A481B0B00E4475D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACABDD181A481B0B00E4475D /* CFNetwork.framework */; };
 		ED6B1C34A568C8A6F2DF5BC1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2BC6B58731FCD05913A15D /* libPods.a */; };
 		F911B27F18750A1700778B05 /* SmvpVideo+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = F911B27E18750A1700778B05 /* SmvpVideo+Image.m */; };
@@ -46,6 +48,10 @@
 		114B0EF9C9A4F75B1C853E01 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7CFD02973A4B26012DE9678B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9D2BC6B58731FCD05913A15D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA1681C1A78D8B6002DE0AD /* VideoDownloaderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDownloaderListViewController.h; sourceTree = "<group>"; };
+		ACA1681D1A78D8B6002DE0AD /* VideoDownloaderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDownloaderListViewController.m; sourceTree = "<group>"; };
+		ACA1681F1A79D769002DE0AD /* DownloaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloaderTableViewCell.h; sourceTree = "<group>"; };
+		ACA168201A79D769002DE0AD /* DownloaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloaderTableViewCell.m; sourceTree = "<group>"; };
 		ACABDD181A481B0B00E4475D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		F911B27D18750A1700778B05 /* SmvpVideo+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SmvpVideo+Image.h"; sourceTree = "<group>"; };
 		F911B27E18750A1700778B05 /* SmvpVideo+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SmvpVideo+Image.m"; sourceTree = "<group>"; };
@@ -179,6 +185,10 @@
 				F9C73DBD186D5D24004B695C /* VideoDetailsViewController.m */,
 				F97C081C187D4868005B04CB /* SmvpUploadView.h */,
 				F97C081D187D4868005B04CB /* SmvpUploadView.m */,
+				ACA1681C1A78D8B6002DE0AD /* VideoDownloaderListViewController.h */,
+				ACA1681D1A78D8B6002DE0AD /* VideoDownloaderListViewController.m */,
+				ACA1681F1A79D769002DE0AD /* DownloaderTableViewCell.h */,
+				ACA168201A79D769002DE0AD /* DownloaderTableViewCell.m */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -350,10 +360,12 @@
 				F9933F3A186C16EE00283A37 /* AppDelegate.m in Sources */,
 				F911B27F18750A1700778B05 /* SmvpVideo+Image.m in Sources */,
 				F9C73DBE186D5D24004B695C /* VideoDetailsViewController.m in Sources */,
+				ACA168211A79D769002DE0AD /* DownloaderTableViewCell.m in Sources */,
 				F9C73DA0186D1DCD004B695C /* SmvpHelper.m in Sources */,
 				F9933F71186C182D00283A37 /* VideoListViewController.m in Sources */,
 				F97C081E187D4868005B04CB /* SmvpUploadView.m in Sources */,
 				F9933F36186C16EE00283A37 /* main.m in Sources */,
+				ACA1681E1A78D8B6002DE0AD /* VideoDownloaderListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

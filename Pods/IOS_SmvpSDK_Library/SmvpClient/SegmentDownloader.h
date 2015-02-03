@@ -13,12 +13,12 @@
 
 @interface SegmentDownloader:NSObject<SmvpHttpConnectionDelegate>
 
-@property(nonatomic,copy)NSString* fileName;
-@property(nonatomic,copy)NSString* tmpFileName;
-@property(nonatomic,copy)NSString* filePath;
-@property(nonatomic,copy)NSString* downloadUrl;
-@property(nonatomic,copy)NSFileHandle* writeHandle;
-@property(nonatomic,strong)SmvpHttpConnection *connection;
+//@property(nonatomic,copy)NSString* fileName;
+//@property(nonatomic,copy)NSString* tmpFileName;
+//@property(nonatomic,copy)NSString* filePath;
+//@property(nonatomic,copy)NSString* downloadUrl;
+//@property(nonatomic,copy)NSFileHandle* writeHandle;
+//@property(nonatomic,strong)SmvpHttpConnection *connection;
 @property(nonatomic,retain)id<SegmentDownloadDelegate>delegate;
 
 -(void)start;

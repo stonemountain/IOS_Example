@@ -13,15 +13,29 @@
 
 @protocol SmvpVideoDownloaderDelegate;
 
-@interface SmvpVideoDownloader : NSObject <M3u8HandlerDelegate,VideoDownloadDelegate>
+@interface SmvpVideoDownloader : NSOperation <M3u8HandlerDelegate,VideoDownloadDelegate,NSMutableCopying>
 
-@property(nonatomic, weak) id<SmvpVideoDownloaderDelegate> delegate;
-@property(nonatomic, strong) M3u8Handler *m3u8Handler;
-@property(nonatomic, strong) VideoDownloader *videoDownloader;
-@property(nonatomic, strong) SmvpAPIClient *smvpAPIclient;
-@property(nonatomic, strong) SmvpRendition *smvpRendition;
+@property(nonatomic, strong) id<SmvpVideoDownloaderDelegate> delegate;
+@property(nonatomic, strong) SmvpRendition * smvpRendition;
 - (instancetype) initWithRendition:(SmvpRendition *)rendition client:(SmvpAPIClient *) client delegate:(id<SmvpVideoDownloaderDelegate>) downloadDelegate;
-- (void)start;
+/*
+     preparing
+     loading
+     failed
+     finished
+ */
+- (NSString *)status;
+
+- (double)progress;
+
+- (NSString *)createTime;
+
+-(void)stopDownloadVideo;
+
+-(void)cancelDownloadVideo;
+
+-(void)resetValue:(id)value forKey:(NSString *)key;
+
 @end
 
 
@@ -30,5 +44,5 @@
 - (void)downloadCanceled:(SmvpVideoDownloader *)loader;
 - (void)downloadFinished:(SmvpVideoDownloader *)loader;
 - (void)downloadFailed:(NSError *)error InResponse:(NSHTTPURLResponse *)response;
-- (void)uploadDidUpdate:(double) progress;
+- (void)downloadDidUpdate:(double) progress;
 @end

@@ -17,11 +17,11 @@
 @interface VideoDownloader : NSObject<SegmentDownloadDelegate>
 
 @property(nonatomic,strong)id<VideoDownloadDelegate> delegate;
-@property(nonatomic,retain)M3u8SegmentList* segmentList;
-@property(nonatomic,retain)SegmentDownloader* segmentDownloader;
-@property(readwrite,strong)SmvpRendition* smvpRendition;
-@property(readwrite,strong)SmvpAPIClient* smvpAPIClient;
-@property(readwrite,assign) double total;
+//@property(nonatomic,retain)M3u8SegmentList* segmentList;
+//@property(nonatomic,retain)SegmentDownloader* segmentDownloader;
+//@property(readwrite,strong)SmvpRendition* smvpRendition;
+//@property(readwrite,strong)SmvpAPIClient* smvpAPIClient;
+//@property(readwrite,assign) double total;
 
 -(id)initWithSegmentList:(M3u8SegmentList*)list andClient:(SmvpAPIClient*)client andRendition:(SmvpRendition*)rendition;
 

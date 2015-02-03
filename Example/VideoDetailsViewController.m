@@ -9,7 +9,8 @@
 #import "VideoDetailsViewController.h"
 #import "SmvpPlayerViewController.h"
 #import "SmvpHelper.h"
-//#import "SmvpVideoDownloader.h"
+#import "SmvpVideoDownloaderManager.h"
+#import "VideoDownloaderListViewController.h"
 
 @interface VideoDetailsViewController ()
 
@@ -23,17 +24,32 @@
 
 - (void)viewDidLoad
 {
-    UIBarButtonItem *saveButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveVideo)];
-	self.navigationItem.rightBarButtonItem = saveButton;
+    _description.text = [NSString stringWithFormat:@"描述：%@",_video.description];
+    _resolution.text = [NSString stringWithFormat:@"分辨率：%ldx%ld",(long)_video.width,(long)_video.height];
+    _bitrate.text = [NSString stringWithFormat:@"码率：%ldkbs",(long)_video.videoKbps];
     [super viewDidLoad];
+}
+
+- (IBAction)saveVideo:(id)sender {
+    NSError *error = nil;
+    SmvpRendition *rendition = [[[SmvpHelper apiClient].entriesHandler getPlayInfor:self.video.entryId error:&error].renditions objectAtIndex:0];
+    if(![[SmvpHelper downloaderManager] download:rendition])
+    {
+        NSString *errorMessage = @"视频已下载";
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Failed to load videos."
+                                                            message:errorMessage
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+        [alertView show];
+    }
 }
 
 -(void)saveVideo
 {
     NSError *error = nil;
     SmvpRendition *rendition = [[[SmvpHelper apiClient].entriesHandler getPlayInfor:self.video.entryId error:&error].renditions objectAtIndex:0];
-    SmvpVideoDownloader *downLoader = [[SmvpVideoDownloader alloc] initWithRendition:rendition client:[SmvpHelper apiClient] delegate:self];
-    [downLoader start];
+    [[SmvpHelper downloaderManager] download:rendition];
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,6 +64,11 @@
         SmvpPlayerViewController *ivc = (SmvpPlayerViewController *)segue.destinationViewController;
         CGRect region = CGRectMake(0, 0, 320, 240);
         [ivc prepareVideo:self.video withApiClient:[SmvpHelper apiClient] inRegion:region];
+    }
+    else if ([segue.destinationViewController isKindOfClass:[VideoDownloaderListViewController class]])
+    {
+        VideoDownloaderListViewController *idvc = (VideoDownloaderListViewController *)segue.destinationViewController;
+        idvc.downloaderList = [[SmvpHelper downloaderManager] getDownloaderList];
     }
 }
 
