@@ -13,7 +13,7 @@
 @interface SmvpVideoPlayerViewController : UIViewController <SmvpVideoPlayer>
 
 @property (nonatomic, weak) id <SmvpVideoPlayerDelegate> delegate;
-@property (readonly, strong) NSDictionary *currentVideoInfo;
+@property (readonly, strong) NSMutableDictionary *currentVideoInfo;
 @property (readonly, strong) SmvpVideoPlayerView *videoPlayerView;
 @property (readonly) BOOL fullScreenModeToggled;
 @property (nonatomic) BOOL showStaticEndTime;

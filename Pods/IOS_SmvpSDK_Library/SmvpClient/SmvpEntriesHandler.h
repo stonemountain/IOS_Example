@@ -10,6 +10,7 @@
 #import "SmvpHttpConnection.h"
 #import "SmvpVideo.h"
 #import "SmvpVideoPlayInfor.h"
+#import "SmvpVideoPlayerConfigurations.h"
 
 @class SmvpAPIClient;
 
@@ -56,6 +57,8 @@
 - (NSURL *) getRemoteM3U8URL:(NSString *) idString;
 
 - (SmvpVideoPlayInfor *) getPlayInfor:(NSString *) idString error:(NSError **) error;
+
+- (SmvpVideoPlayerConfigurations *) getPlayConfigurations:(NSString *) idString error:(NSError **) error;
 
 - (NSArray *) getRelated:(NSString *) idString error:(NSError **) error;
 

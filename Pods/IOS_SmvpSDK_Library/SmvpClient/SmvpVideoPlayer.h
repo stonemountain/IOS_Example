@@ -8,10 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString * const kVideoPlayerVideoChangedNotification;
-extern NSString * const kTrackEventVideoStart;
-extern NSString * const kTrackEventVideoLiveStart;
-extern NSString * const kTrackEventVideoComplete;
+//extern NSString * const kVideoPlayerVideoChangedNotification;
+//extern NSString * const kTrackEventVideoStart;
+//extern NSString * const kTrackEventVideoLiveStart;
+//extern NSString * const kTrackEventVideoComplete;
+extern NSString * const videoStart;
+extern NSString * const videoPause;
+extern NSString * const videoPlay;
+extern NSString * const videoProgress;
+extern NSString * const videoComplete;
+
+
 
 @protocol SmvpVideoPlayerDelegate <NSObject>
 

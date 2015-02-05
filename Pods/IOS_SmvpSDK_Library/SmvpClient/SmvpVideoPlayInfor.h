@@ -18,6 +18,7 @@
 @property(nonatomic, assign) NSInteger duration;
 @property(nonatomic, strong) NSArray *renditions;
 @property(nonatomic, strong) NSArray *thumbnails;
+@property(nonatomic, strong) NSString *pubId;
 
 - (instancetype) initWithJsonObject:(NSDictionary *)jsonObject;
 

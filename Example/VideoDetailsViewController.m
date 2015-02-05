@@ -11,6 +11,8 @@
 #import "SmvpHelper.h"
 #import "SmvpVideoDownloaderManager.h"
 #import "VideoDownloaderListViewController.h"
+#import "SmvpVideoPlayerConfigurations.h"
+#import "SmvpVideoPlayerViewController.h"
 
 @interface VideoDetailsViewController ()
 
@@ -27,15 +29,22 @@
     _description.text = [NSString stringWithFormat:@"描述：%@",_video.description];
     _resolution.text = [NSString stringWithFormat:@"分辨率：%ldx%ld",(long)_video.width,(long)_video.height];
     _bitrate.text = [NSString stringWithFormat:@"码率：%ldkbs",(long)_video.videoKbps];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoStart:) name:videoStart object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoPlay:) name:videoPlay object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoPause:) name:videoPause object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoProgress:) name:videoProgress object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoComplete:) name:videoComplete object:nil];
     [super viewDidLoad];
+    
 }
 
 - (IBAction)saveVideo:(id)sender {
     NSError *error = nil;
     SmvpRendition *rendition = [[[SmvpHelper apiClient].entriesHandler getPlayInfor:self.video.entryId error:&error].renditions objectAtIndex:0];
-    if(![[SmvpHelper downloaderManager] download:rendition])
+    if(![[SmvpHelper downloaderManager] download:rendition error:&error])
     {
-        NSString *errorMessage = @"视频已下载";
+        NSString *errorMessage = [[error userInfo] objectForKey:@"msg"];
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Failed to load videos."
                                                             message:errorMessage
                                                            delegate:nil
@@ -43,13 +52,6 @@
                                                   otherButtonTitles:nil];
         [alertView show];
     }
-}
-
--(void)saveVideo
-{
-    NSError *error = nil;
-    SmvpRendition *rendition = [[[SmvpHelper apiClient].entriesHandler getPlayInfor:self.video.entryId error:&error].renditions objectAtIndex:0];
-    [[SmvpHelper downloaderManager] download:rendition];
 }
 
 - (void)didReceiveMemoryWarning
@@ -70,6 +72,36 @@
         VideoDownloaderListViewController *idvc = (VideoDownloaderListViewController *)segue.destinationViewController;
         idvc.downloaderList = [[SmvpHelper downloaderManager] getDownloaderList];
     }
+}
+
+- (void) videoStart:(NSNotification*) notification
+{
+    id obj = [notification userInfo];
+    NSLog(@"videoStart obj:%@",obj);
+}
+
+- (void) videoPlay:(NSNotification*) notification
+{
+    id obj = [notification userInfo];
+    NSLog(@"videoPlay obj:%@",obj);
+}
+
+- (void) videoPause:(NSNotification*) notification
+{
+    id obj = [notification userInfo];
+    NSLog(@"videoPause obj:%@",obj);
+}
+
+- (void) videoComplete:(NSNotification*) notification
+{
+    id obj = [notification userInfo];
+    NSLog(@"videoComplete obj:%@",obj);
+}
+
+- (void) videoProgress:(NSNotification*) notification
+{
+    id obj = [notification userInfo];
+    NSLog(@"videoProgress obj:%@",obj);
 }
 
 -(void)dealloc{

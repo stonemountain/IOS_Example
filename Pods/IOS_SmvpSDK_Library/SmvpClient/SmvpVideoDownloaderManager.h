@@ -13,7 +13,7 @@
 
 @interface SmvpVideoDownloaderManager : NSObject<SmvpVideoDownloaderDelegate>
 
--(SmvpVideoDownloader *)download:(SmvpRendition *)rendition;
+-(SmvpVideoDownloader *)download:(SmvpRendition *)rendition error:(NSError **)error;
 -(void)pause;
 -(void)resume;
 -(void)pause:(SmvpVideoDownloader *)downloader;
