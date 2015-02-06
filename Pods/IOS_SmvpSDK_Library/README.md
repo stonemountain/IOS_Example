@@ -2,20 +2,31 @@ IOS_SmvpSDK_Library
 ==================
 call api:
 
-        token auth;
+	token auth;
 
-        entries curd;
+	entries curd;
 
-        categories curd;
+	categories curd;
+
+	set callback;
 =============================
 video player:
 
-        simple video play function;
+	simple video play function;
 
-        post notification for play status;
+	post notification for play status;
+
+	play analytics;
+
+	pause;
+
+	play;
+
+	seek;
 ============================
 video manager:
 
-        video upload;
+	video upload;
 
-        video downloader manager(local cache);	
+	video downloader manager(local cache);	
+		
