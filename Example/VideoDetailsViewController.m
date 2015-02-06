@@ -12,13 +12,16 @@
 #import "SmvpVideoDownloaderManager.h"
 #import "VideoDownloaderListViewController.h"
 #import "SmvpVideoPlayerConfigurations.h"
-#import "SmvpVideoPlayerViewController.h"
+#import "SmvpVideoPlayer.h"
 
 @interface VideoDetailsViewController ()
 
 @end
 
 @implementation VideoDetailsViewController
+{
+    SmvpPlayerViewController *ivc;
+}
 
 - (void) setVideo:(SmvpVideo *)video {
     _video = video;
@@ -30,11 +33,11 @@
     _resolution.text = [NSString stringWithFormat:@"分辨率：%ldx%ld",(long)_video.width,(long)_video.height];
     _bitrate.text = [NSString stringWithFormat:@"码率：%ldkbs",(long)_video.videoKbps];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoStart:) name:videoStart object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoPlay:) name:videoPlay object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoPause:) name:videoPause object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoProgress:) name:videoProgress object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoComplete:) name:videoComplete object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoStart:)      name:videoStart object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoPlay:)       name:videoPlay object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoPause:)      name:videoPause object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoProgress:)   name:videoProgress object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoComplete:)   name:videoComplete object:nil];
     [super viewDidLoad];
     
 }
@@ -54,6 +57,8 @@
     }
 }
 
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -63,7 +68,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.destinationViewController isKindOfClass:[SmvpPlayerViewController class]]) {
-        SmvpPlayerViewController *ivc = (SmvpPlayerViewController *)segue.destinationViewController;
+        ivc = (SmvpPlayerViewController *)segue.destinationViewController;
         CGRect region = CGRectMake(0, 0, 320, 240);
         [ivc prepareVideo:self.video withApiClient:[SmvpHelper apiClient] inRegion:region];
     }
@@ -73,6 +78,23 @@
         idvc.downloaderList = [[SmvpHelper downloaderManager] getDownloaderList];
     }
 }
+
+- (IBAction)play:(id)sender {
+    [ivc play];
+}
+
+- (IBAction)pause:(id)sender {
+    [ivc pause];
+}
+
+- (IBAction)seek10:(id)sender {
+    [ivc seek:10];
+}
+
+- (IBAction)seek1:(id)sender {
+    [ivc seek:1];
+}
+
 
 - (void) videoStart:(NSNotification*) notification
 {
