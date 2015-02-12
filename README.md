@@ -10,9 +10,9 @@ about 1.2.5: play video with playerId's configurations：
 	
 	now support :
 	
-	autoPlay;
+		autoPlay;
 	
-	loop;
+		loop;
 
 about 1.2.6: Fix the bug of loop;	
 
