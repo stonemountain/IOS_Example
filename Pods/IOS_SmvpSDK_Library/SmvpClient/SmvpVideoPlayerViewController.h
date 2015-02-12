@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SmvpVideoPlayer.h"
 #import "SmvpVideoPlayerView.h"
+#import "SmvpVideoPlayerConfigurations.h"
 
 @interface SmvpVideoPlayerViewController : UIViewController <SmvpVideoPlayer>
 
@@ -22,12 +23,13 @@
 @property (nonatomic) UIEdgeInsets controlsEdgeInsets;
 @property (readwrite, strong) AVPlayer *videoPlayer;
 
-- (void)playVideoWithTitle:(NSString *)title URL:(NSURL *)url videoID:(NSString *)videoID isStreaming:(BOOL)streaming playInFullScreen:(BOOL)playInFullScreen;
+- (void)playVideoWithTitle:(NSString *)title URL:(NSURL *)url videoID:(NSString *)videoID playerConfigurations:(SmvpVideoPlayerConfigurations *)configurations isStreaming:(BOOL)streaming playInFullScreen:(BOOL)playInFullScreen;
 - (void)syncFullScreenButton:(UIInterfaceOrientation)toInterfaceOrientation;
 - (void)showCannotFetchStreamError;
 - (void)launchFullScreen;
 - (void)minimizeVideo;
 - (void)playPauseHandler;
+- (void)seekToTime:(CMTime)time;
 + (SmvpVideoPlayerViewController *)videoPlayerWithContainingViewController:(UIViewController *)containingViewController topView:(UIView *)topView;
 
 

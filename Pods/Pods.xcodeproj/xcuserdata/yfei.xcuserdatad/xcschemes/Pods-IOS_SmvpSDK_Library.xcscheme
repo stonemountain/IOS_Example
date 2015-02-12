@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "85E73DDCADBBEB0E0C7C769F"
+               BlueprintIdentifier = "39E038AD2E29D2565C06E00A"
                BuildableName = "libPods-IOS_SmvpSDK_Library.a"
                BlueprintName = "Pods-IOS_SmvpSDK_Library"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -20,6 +20,6 @@
 
 - (void) seek:(float) time;
 
-- (void) prepareVideo:(SmvpVideo *)video withApiClient:(SmvpAPIClient *) apiClient inRegion:(CGRect)region;
+- (void) prepareVideo:(SmvpVideo *)video withApiClient:(SmvpAPIClient *) apiClient andPlayerId:(NSString *) playerId inRegion:(CGRect)region;
 
 @end

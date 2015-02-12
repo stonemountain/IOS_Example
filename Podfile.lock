@@ -1,10 +1,10 @@
 PODS:
-  - IOS_SmvpSDK_Library (1.2.4)
+  - IOS_SmvpSDK_Library (1.2.6)
 
 DEPENDENCIES:
-  - IOS_SmvpSDK_Library (~> 1.2.4)
+  - IOS_SmvpSDK_Library (~> 1.2.6)
 
 SPEC CHECKSUMS:
-  IOS_SmvpSDK_Library: 024b825c0348ec52dbadde56f0cd85679462bc2b
+  IOS_SmvpSDK_Library: 3f33ffc5bda6a0a0713b043d7adcc997a2bda87f
 
 COCOAPODS: 0.35.0

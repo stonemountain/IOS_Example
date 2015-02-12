@@ -14,6 +14,8 @@ video player:
 
 	simple video play function;
 
+	play video width playerId from console: configurations(autoplay,loop);
+
 	post notification for play status;
 
 	play analytics;

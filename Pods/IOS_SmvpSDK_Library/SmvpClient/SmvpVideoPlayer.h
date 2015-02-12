@@ -7,11 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-//extern NSString * const kVideoPlayerVideoChangedNotification;
-//extern NSString * const kTrackEventVideoStart;
-//extern NSString * const kTrackEventVideoLiveStart;
-//extern NSString * const kTrackEventVideoComplete;
+@class SmvpVideoPlayerConfigurations;
 extern NSString * const videoStart;
 extern NSString * const videoPause;
 extern NSString * const videoPlay;
@@ -37,7 +33,7 @@ extern NSString * const videoComplete;
 @property (nonatomic) BOOL allowPortraitFullscreen;
 @property (nonatomic, readonly) BOOL isPlaying;
 
-- (void)playVideoWithTitle:(NSString *)title URL:(NSURL *)url videoID:(NSString *)videoID isStreaming:(BOOL)streaming playInFullScreen:(BOOL)playInFullScreen;
+- (void)playVideoWithTitle:(NSString *)title URL:(NSURL *)url videoID:(NSString *)videoID playerConfigurations:(SmvpVideoPlayerConfigurations *)configurations isStreaming:(BOOL)streaming playInFullScreen:(BOOL)playInFullScreen;
 - (void)showCannotFetchStreamError;
 - (void)launchFullScreen;
 - (void)minimizeVideo;
