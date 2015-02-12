@@ -22,4 +22,4 @@ about 1.2.6:
  
 	Fix the bug of loop;	
 
-For more information please access "https://github.com/stonemountain/IOS_SmvpSDK_Library".
+[For more information](https://github.com/stonemountain/IOS_SmvpSDK_Library).
