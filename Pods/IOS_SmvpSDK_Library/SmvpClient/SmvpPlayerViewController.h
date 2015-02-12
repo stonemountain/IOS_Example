@@ -14,6 +14,12 @@
 
 @property(nonatomic, strong) SmvpVideo *video;
 
+- (void) play;
+
+- (void) pause;
+
+- (void) seek:(float) time;
+
 - (void) prepareVideo:(SmvpVideo *)video withApiClient:(SmvpAPIClient *) apiClient inRegion:(CGRect)region;
 
 @end
