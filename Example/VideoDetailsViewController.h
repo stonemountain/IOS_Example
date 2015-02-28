@@ -15,6 +15,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *save;
 @property (strong, nonatomic) IBOutlet UILabel *resolution;
 @property (strong, nonatomic) IBOutlet UILabel *bitrate;
+@property (strong, nonatomic) IBOutlet UILabel *status;
 
 @property(nonatomic, strong) SmvpVideo *video;
 

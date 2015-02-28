@@ -100,30 +100,35 @@
 {
     id obj = [notification userInfo];
     NSLog(@"videoStart obj:%@",obj);
+    _status.text = [NSString stringWithFormat:@"videoStart:%@",obj];
 }
 
 - (void) videoPlay:(NSNotification*) notification
 {
     id obj = [notification userInfo];
     NSLog(@"videoPlay obj:%@",obj);
+    _status.text = [NSString stringWithFormat:@"videoPlay:%@",obj];
 }
 
 - (void) videoPause:(NSNotification*) notification
 {
     id obj = [notification userInfo];
     NSLog(@"videoPause obj:%@",obj);
+    _status.text = [NSString stringWithFormat:@"videoPause:%@",obj];
 }
 
 - (void) videoComplete:(NSNotification*) notification
 {
     id obj = [notification userInfo];
     NSLog(@"videoComplete obj:%@",obj);
+    _status.text = [NSString stringWithFormat:@"videoComplete:%@",obj];
 }
 
 - (void) videoProgress:(NSNotification*) notification
 {
     id obj = [notification userInfo];
     NSLog(@"videoProgress obj:%@",obj);
+    _status.text = [NSString stringWithFormat:@"videoProgress:%@",obj];
 }
 
 -(void)dealloc{

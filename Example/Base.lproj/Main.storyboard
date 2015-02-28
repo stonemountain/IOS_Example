@@ -161,6 +161,12 @@
                                     <action selector="seek10:" destination="VtO-fe-HFa" eventType="touchUpInside" id="At7-wU-7w5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HGe-6p-OXh">
+                                <rect key="frame" x="179" y="396" width="152" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -172,6 +178,7 @@
                         <outlet property="description" destination="F0E-Fb-htn" id="AAC-Mk-Eao"/>
                         <outlet property="resolution" destination="zqZ-3z-gw1" id="6lp-Bj-2eG"/>
                         <outlet property="save" destination="FZO-j9-FMc" id="wQC-9E-Ilf"/>
+                        <outlet property="status" destination="HGe-6p-OXh" id="TlV-n9-sWI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Axb-9v-4Pi" userLabel="First Responder" sceneMemberID="firstResponder"/>
