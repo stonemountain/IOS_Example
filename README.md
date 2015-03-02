@@ -26,6 +26,6 @@ about 1.2.7:
 
 	volume control;
 
-	display state on the devide; 
+	display state on the device; 
 
 [For more information](https://github.com/stonemountain/IOS_SmvpSDK_Library).
