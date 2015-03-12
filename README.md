@@ -42,3 +42,5 @@ about 1.2.9:
 	 
 
 [For more information](https://github.com/stonemountain/IOS_SmvpSDK_Library).
+
+[document](https://github.com/stonemountain/IOS_SmvpSDK_Library/blob/master/apiDoc.zip).
