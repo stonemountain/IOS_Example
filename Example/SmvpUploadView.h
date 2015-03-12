@@ -14,10 +14,6 @@
 
 @property (weak, nonatomic) id<SmvpUploadProgressDelegate> delegate;
 @property (nonatomic) CGFloat progress;
-
-- (instancetype)initWithTableView:(UITableView *)tableView message:(NSString *)uploadMsg;
-@end
-
-@protocol SmvpUploadProgressDelegate
-- (void)uploadDidCancel:(SmvpUploadView *)progressView;
+@property (strong, nonatomic) UILabel *progressLabel;
+- (instancetype)initWithTableView:(UITableViewCell *)tableViewCell message:(NSString *)uploadMsg;
 @end

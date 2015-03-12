@@ -27,10 +27,12 @@ video player:
 	seek;
 
 	volume control;
+
+	rendition selected;
 ============================
 video manager:
 
-	video upload;
+	video upload manager(no cache);
 
 	video downloader manager(local cache);	
 ============================

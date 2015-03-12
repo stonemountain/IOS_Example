@@ -10,20 +10,19 @@
 
 @interface SmvpUploadView ()
 
-@property (assign, nonatomic) UITableView *tableView;
+@property (assign, nonatomic) UITableViewCell *tableViewCell;
 @property (strong, nonatomic) UIView *photoborder;
 @property (strong, nonatomic) UIImageView *photoImageView;
-@property (strong, nonatomic) UILabel *progressLabel;
 @property (strong, nonatomic) UIProgressView *progressView;
-@property (strong, nonatomic) UIButton *cancelButton;
+//@property (strong, nonatomic) UIButton *cancelButton;
 @end
 
 @implementation SmvpUploadView
 
-- (id)initWithTableView:(UITableView *)tableView message:(NSString *)uploadMsg {
+- (id)initWithTableView:(UITableViewCell *)tableViewCell message:(NSString *)uploadMsg {
     self = [super initWithFrame:CGRectMake(0.0, 0.0, 320.0, 54.0)];
     if (self) {
-		self.tableView = tableView;
+		self.tableViewCell = tableViewCell;
 		self.progress = 0.0f;
 		
 		// Configure the background
@@ -54,14 +53,13 @@
 		
 		[self addSubview:self.progressView];
 		
-		self.cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        self.cancelButton.frame = CGRectMake(278.0, 5.0, 44.0, 44.0);
-        [self.cancelButton setImage:[UIImage imageNamed:@"upload-cancel-button"] forState:UIControlStateNormal];
-        [self.cancelButton addTarget:self action:@selector(canceledUpload) forControlEvents:UIControlEventTouchUpInside];
-			
-        [self addSubview:self.cancelButton];
-		
-		[self.tableView setTableHeaderView:self];
+//		self.cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//        self.cancelButton.frame = CGRectMake(278.0, 5.0, 44.0, 44.0);
+//        [self.cancelButton setImage:[UIImage imageNamed:@"upload-cancel-button"] forState:UIControlStateNormal];
+//        [self.cancelButton addTarget:self action:@selector(canceledUpload) forControlEvents:UIControlEventTouchUpInside];
+//			
+//        [self addSubview:self.cancelButton];
+		[self.tableViewCell addSubview:self];
     }
     return self;
 }
@@ -72,13 +70,9 @@
 	[self.progressView setProgress:prog animated:YES];
 	
 	if (prog == 1.0) {
-		self.cancelButton.enabled = NO;
+//		self.cancelButton.enabled = NO;
 	}
 }
 
-- (void)canceledUpload {
-	if (self.delegate)
-		[self.delegate uploadDidCancel:self];
-}
 
 @end

@@ -26,6 +26,19 @@ about 1.2.7:
 
 	volume control;
 
-	display state on the device; 
+	display state on the device;
+
+about 1.2.8:
+
+	post progress info;
+
+about 1.2.9:
+
+	rendition selected;
+
+	upload manager;
+
+	fix bugs;
+	 
 
 [For more information](https://github.com/stonemountain/IOS_SmvpSDK_Library).

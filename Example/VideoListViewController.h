@@ -9,14 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <MobileCoreServices/UTCoreTypes.h>
 #import "SmvpVideoUploader.h"
-#import "SmvpUploadView.h"
 #import "SmvpHttpConnection.h"
 #import "SmvpVideoDownloader.h"
 
-@interface VideoListViewController : UITableViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, SmvpVideoUploaderDelegate, SmvpUploadProgressDelegate, SmvpVideoDownloaderDelegate>
+@interface VideoListViewController : UITableViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, SmvpVideoUploaderDelegate, SmvpVideoDownloaderDelegate>
 
 @property(nonatomic, strong) NSArray *videos;
-@property(nonatomic, strong) SmvpUploadView *uploadView;
 @property(nonatomic, strong) SmvpHttpConnection *uploadConnection;
 
 - (IBAction)fetchVideos;

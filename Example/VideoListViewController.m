@@ -12,14 +12,19 @@
 #import "SmvpImageDownloader.h"
 #import "SmvpVideo+Image.h"
 #import "SmvpUploadView.h"
+#import "VideoDownloaderListViewController.h"
+#import "VideoUploadListViewController.h"
 
 @interface VideoListViewController () <UIScrollViewDelegate>
 @property (nonatomic, strong) NSMutableDictionary *imageDownloadsInProgress;
 @end
 
 @implementation VideoListViewController
+{
+    UIBarButtonItem *addButton;
+}
 
-@synthesize uploadView, uploadConnection;
+@synthesize uploadConnection;
 
 - (void)awakeFromNib
 {
@@ -30,13 +35,15 @@
 {
     [super viewDidLoad];
 	
-	UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(selectVideoToUpload)];
-	self.navigationItem.rightBarButtonItem = addButton;
+	addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(selectVideoToUpload)];
+	UIBarButtonItem *downloadListButton =[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(downloadList)];
+    self.navigationItem.rightBarButtonItems = @[addButton,downloadListButton];
     self.imageDownloadsInProgress = [NSMutableDictionary dictionary];
     [self fetchVideos];
 }
 
 - (void)selectVideoToUpload {
+    [addButton setEnabled:YES];
 	UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
     imagePicker.delegate = self;
     imagePicker.allowsEditing = YES;
@@ -57,47 +64,14 @@
     
     // Handle a movie capture
     if ([mediaType isEqualToString:(NSString*)kUTTypeMovie]) {
-        
+        NSError *error = nil;
         NSURL *movieURL = [info objectForKey:UIImagePickerControllerMediaURL];
-        self.uploadView = [[SmvpUploadView alloc] initWithTableView:self.tableView message:@"Uploading..."];
-        self.uploadView.delegate = self;
-        self.navigationItem.rightBarButtonItem.enabled = NO;
-        SmvpVideoUploader *videoUploader = [[SmvpVideoUploader alloc] initWithFile:movieURL apiClient:[SmvpHelper apiClient] delegate:self];
-        self.uploadConnection = [videoUploader uploadWithParamters:[[NSDictionary alloc] init]];
-        [self.uploadConnection start];
+        [[SmvpHelper uploaderManager] upload:movieURL paramters:[[NSDictionary alloc] init] error:&error];
+        [self performSegueWithIdentifier:@"upload" sender:self];
     }
 }
 
-- (void)uploadDidCancel:(SmvpUploadView *)progressView {
-    [self.uploadConnection cancel];
-}
 
-- (void)uploadCanceled:(SmvpHttpConnection *)connection {
-    [self.tableView setTableHeaderView:nil];
-    [self.uploadView removeFromSuperview];
-    self.uploadView = nil;
-    self.navigationItem.rightBarButtonItem.enabled = YES;
-}
-
-- (void)uploadFinished:(NSHTTPURLResponse *)response {
-    [self.tableView setTableHeaderView:nil];
-    [self.uploadView removeFromSuperview];
-    self.uploadView = nil;
-    self.navigationItem.rightBarButtonItem.enabled = YES;
-    [self fetchVideos];
-}
-
-- (void)uploadFailed:(NSError *)error InResponse:(NSHTTPURLResponse *)response {
-    [self.tableView setTableHeaderView:nil];
-    [self.uploadView removeFromSuperview];
-    self.uploadView = nil;
-    self.navigationItem.rightBarButtonItem.enabled = YES;
-    [self handleError:error];
-}
-
-- (void)uploadDidUpdate:(double) progress {
-    [self.uploadView setProgress:progress];
-}
 
 - (void)handleError:(NSError *)error {
     NSString *errorMessage = [error localizedDescription];
@@ -249,6 +223,11 @@
     [self loadImagesForOnscreenRows];
 }
 
+-(void)downloadList
+{
+    [self performSegueWithIdentifier:@"download" sender:self];
+}
+
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
@@ -272,6 +251,16 @@
         VideoDetailsViewController *ivc = (VideoDetailsViewController *)segue.destinationViewController;
         ivc.video = video;
         ivc.title = video.title;
+    }
+    else if ([segue.destinationViewController isKindOfClass:[VideoDownloaderListViewController class]])
+    {
+        VideoDownloaderListViewController *idvc = (VideoDownloaderListViewController *)segue.destinationViewController;
+        idvc.downloaderList = [[SmvpHelper downloaderManager] getDownloaderList];
+    }
+    else if ([segue.destinationViewController isKindOfClass:[VideoUploadListViewController class]])
+    {
+        VideoUploadListViewController *iuvc = (VideoUploadListViewController *)segue.destinationViewController;
+        iuvc.uploadList = [[SmvpHelper uploaderManager] getUploaderList];
     }
 }
 

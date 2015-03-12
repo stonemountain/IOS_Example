@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		ACA1681E1A78D8B6002DE0AD /* VideoDownloaderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA1681D1A78D8B6002DE0AD /* VideoDownloaderListViewController.m */; };
 		ACA168211A79D769002DE0AD /* DownloaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA168201A79D769002DE0AD /* DownloaderTableViewCell.m */; };
+		ACA82C2F1AB12E6400AAEC3B /* VideoUploadListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA82C2E1AB12E6400AAEC3B /* VideoUploadListViewController.m */; };
+		ACA82C321AB12FD400AAEC3B /* UploadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA82C311AB12FD400AAEC3B /* UploadTableViewCell.m */; };
 		ACABDD191A481B0B00E4475D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACABDD181A481B0B00E4475D /* CFNetwork.framework */; };
 		ED6B1C34A568C8A6F2DF5BC1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2BC6B58731FCD05913A15D /* libPods.a */; };
 		F911B27F18750A1700778B05 /* SmvpVideo+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = F911B27E18750A1700778B05 /* SmvpVideo+Image.m */; };
@@ -52,6 +54,10 @@
 		ACA1681D1A78D8B6002DE0AD /* VideoDownloaderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDownloaderListViewController.m; sourceTree = "<group>"; };
 		ACA1681F1A79D769002DE0AD /* DownloaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloaderTableViewCell.h; sourceTree = "<group>"; };
 		ACA168201A79D769002DE0AD /* DownloaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloaderTableViewCell.m; sourceTree = "<group>"; };
+		ACA82C2D1AB12E6400AAEC3B /* VideoUploadListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoUploadListViewController.h; sourceTree = "<group>"; };
+		ACA82C2E1AB12E6400AAEC3B /* VideoUploadListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoUploadListViewController.m; sourceTree = "<group>"; };
+		ACA82C301AB12FD400AAEC3B /* UploadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadTableViewCell.h; sourceTree = "<group>"; };
+		ACA82C311AB12FD400AAEC3B /* UploadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadTableViewCell.m; sourceTree = "<group>"; };
 		ACABDD181A481B0B00E4475D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		F911B27D18750A1700778B05 /* SmvpVideo+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SmvpVideo+Image.h"; sourceTree = "<group>"; };
 		F911B27E18750A1700778B05 /* SmvpVideo+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SmvpVideo+Image.m"; sourceTree = "<group>"; };
@@ -189,6 +195,10 @@
 				ACA1681D1A78D8B6002DE0AD /* VideoDownloaderListViewController.m */,
 				ACA1681F1A79D769002DE0AD /* DownloaderTableViewCell.h */,
 				ACA168201A79D769002DE0AD /* DownloaderTableViewCell.m */,
+				ACA82C2D1AB12E6400AAEC3B /* VideoUploadListViewController.h */,
+				ACA82C2E1AB12E6400AAEC3B /* VideoUploadListViewController.m */,
+				ACA82C301AB12FD400AAEC3B /* UploadTableViewCell.h */,
+				ACA82C311AB12FD400AAEC3B /* UploadTableViewCell.m */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -358,8 +368,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9933F3A186C16EE00283A37 /* AppDelegate.m in Sources */,
+				ACA82C2F1AB12E6400AAEC3B /* VideoUploadListViewController.m in Sources */,
 				F911B27F18750A1700778B05 /* SmvpVideo+Image.m in Sources */,
 				F9C73DBE186D5D24004B695C /* VideoDetailsViewController.m in Sources */,
+				ACA82C321AB12FD400AAEC3B /* UploadTableViewCell.m in Sources */,
 				ACA168211A79D769002DE0AD /* DownloaderTableViewCell.m in Sources */,
 				F9C73DA0186D1DCD004B695C /* SmvpHelper.m in Sources */,
 				F9933F71186C182D00283A37 /* VideoListViewController.m in Sources */,

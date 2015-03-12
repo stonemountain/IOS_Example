@@ -8,11 +8,13 @@
 
 #import "SmvpHelper.h"
 #import "SmvpVideoDownloaderManager.h"
+#import "SmvpVideoUploaderManager.h"
 
 @implementation SmvpHelper
 
 static SmvpAPIClient *_apiClient;
 static SmvpVideoDownloaderManager *_downloaderManager;
+static SmvpVideoUploaderManager *_uploaderManager;
 
 + (SmvpAPIClient *) apiClient {
     if (!_apiClient) {
@@ -28,6 +30,14 @@ static SmvpVideoDownloaderManager *_downloaderManager;
         _downloaderManager = [[SmvpVideoDownloaderManager alloc] initWithClient:[SmvpHelper apiClient]];
     }
     return _downloaderManager;
+}
+
++ (SmvpVideoUploaderManager *)uploaderManager
+{
+    if (!_uploaderManager) {
+        _uploaderManager = [[SmvpVideoUploaderManager alloc] initWithClient:[SmvpHelper apiClient]];
+    }
+    return _uploaderManager;
 }
 
 @end

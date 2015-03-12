@@ -9,10 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "SmvpAPIClient.h"
 #import "SmvpVideoDownloaderManager.h"
+#import "SmvpVideoUploaderManager.h"
 
 @interface SmvpHelper : NSObject
 
 + (SmvpAPIClient *) apiClient;
 + (SmvpVideoDownloaderManager *) downloaderManager;
++ (SmvpVideoUploaderManager *) uploaderManager;
 
 @end

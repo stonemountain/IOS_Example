@@ -1,2 +1,2 @@
 platform :ios, '7.0'
-pod 'IOS_SmvpSDK_Library', '~>1.2.7'
+pod 'IOS_SmvpSDK_Library', '~>1.2.9'

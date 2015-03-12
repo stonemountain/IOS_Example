@@ -10,6 +10,7 @@
 #import "SmvpVideoPlayer.h"
 #import "SmvpVideoPlayerView.h"
 #import "SmvpVideoPlayerConfigurations.h"
+#import "SmvpVideoPlayInfor.h"
 
 @interface SmvpVideoPlayerViewController : UIViewController <SmvpVideoPlayer>
 
@@ -21,6 +22,7 @@
 @property (nonatomic, readonly) BOOL isPlaying;
 @property (nonatomic) BOOL allowPortraitFullscreen;
 @property (nonatomic) UIEdgeInsets controlsEdgeInsets;
+@property (readwrite, strong) SmvpVideoPlayInfor *pl;
 @property (readwrite, strong) AVPlayer *videoPlayer;
 
 - (void)playVideoWithTitle:(NSString *)title URL:(NSURL *)url videoID:(NSString *)videoID playerConfigurations:(SmvpVideoPlayerConfigurations *)configurations isStreaming:(BOOL)streaming playInFullScreen:(BOOL)playInFullScreen;
