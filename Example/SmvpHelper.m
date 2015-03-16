@@ -20,6 +20,7 @@ static SmvpVideoUploaderManager *_uploaderManager;
     if (!_apiClient) {
         
        _apiClient = [[SmvpAPIClient alloc] initWithToken:@"SJQ-7zgT_lOwaq816PPkkZqNDfl8TlaXoARoAQxaXAE="];
+//        _apiClient = [[SmvpAPIClient alloc] initWithToken:@"SJQ-7zgT_lOwaq816PPkkaYqhb-Ik1uvHET25baT5Iw="];
     }
     return _apiClient;
 }
