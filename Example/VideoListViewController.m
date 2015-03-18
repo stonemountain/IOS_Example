@@ -246,7 +246,6 @@
                                                         cancelButtonTitle:@"OK"
                                                         otherButtonTitles:nil];
             [alertView show];
-            [sender setUserInteractionEnabled:NO];
             return;
         }
         VideoDetailsViewController *ivc = (VideoDetailsViewController *)segue.destinationViewController;

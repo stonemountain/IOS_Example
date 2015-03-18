@@ -250,11 +250,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../smios/SmvpClient/SmvpClient/SmvpVideoPlayerViewController.m"
-            timestampString = "448179864.917318"
+            timestampString = "448339836.019081"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "253"
-            endingLineNumber = "253"
+            startingLineNumber = "251"
+            endingLineNumber = "251"
             landmarkName = "-playVideoWithTitle:playerConfigurations:isStreaming:playInFullScreen:"
             landmarkType = "5">
          </BreakpointContent>
