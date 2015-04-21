@@ -11,7 +11,7 @@
 #import "SmvpVideoDownloader.h"
 
 @interface VideoDetailsViewController : UIViewController <SmvpVideoDownloaderDelegate>
-@property (strong, nonatomic) IBOutlet UILabel *description;
+@property (strong, nonatomic) IBOutlet UILabel *videoDescription;
 @property (strong, nonatomic) IBOutlet UIButton *save;
 @property (strong, nonatomic) IBOutlet UILabel *resolution;
 @property (strong, nonatomic) IBOutlet UILabel *bitrate;

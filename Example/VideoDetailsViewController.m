@@ -29,7 +29,7 @@
 
 - (void)viewDidLoad
 {
-    _description.text = [NSString stringWithFormat:@"描述：%@",_video.description];
+    _videoDescription.text = [NSString stringWithFormat:@"描述：%@",_video.videoDescription];
     _resolution.text = [NSString stringWithFormat:@"分辨率：%ldx%ld",(long)_video.width,(long)_video.height];
     _bitrate.text = [NSString stringWithFormat:@"码率：%ldkbs",(long)_video.videoKbps];
     
@@ -70,7 +70,8 @@
     if ([segue.destinationViewController isKindOfClass:[SmvpPlayerViewController class]]) {
         ivc = (SmvpPlayerViewController *)segue.destinationViewController;
         CGRect region = CGRectMake(0, 0, 320, 240);
-        [ivc prepareVideo:self.video withApiClient:[SmvpHelper apiClient] andPlayerId:@"464869259962649779" inRegion:region];
+//        [ivc prepareVideo:self.video withApiClient:[SmvpHelper apiClient] andPlayerId:@"428082998184697028" inRegion:region];
+        [ivc prepareVideo:self.video withApiClient:[SmvpHelper apiClient] andPlayerId:@"107" inRegion:region];
     }
     else if ([segue.destinationViewController isKindOfClass:[VideoDownloaderListViewController class]])
     {

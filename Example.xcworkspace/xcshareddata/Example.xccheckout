@@ -10,43 +10,31 @@
 	<string>Example</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>16FEDE5D-FB02-47A3-AB2C-5A3FDBFE641F</key>
-		<string>ssh://git.smvp.cn/smios.git</string>
-		<key>C86704D5-01C6-46F1-853B-9436A18EDA52</key>
+		<key>0C3A1BBCA282FA2262B4DD33DA00035C27E0B166</key>
 		<string>https://github.com/stonemountain/IOS_Example</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>IOS_Example/Example.xcworkspace</string>
+	<string>Example.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>16FEDE5D-FB02-47A3-AB2C-5A3FDBFE641F</key>
-		<string>../..</string>
-		<key>C86704D5-01C6-46F1-853B-9436A18EDA52</key>
+		<key>0C3A1BBCA282FA2262B4DD33DA00035C27E0B166</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/stonemountain/IOS_Example</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>16FEDE5D-FB02-47A3-AB2C-5A3FDBFE641F</string>
+	<string>0C3A1BBCA282FA2262B4DD33DA00035C27E0B166</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C86704D5-01C6-46F1-853B-9436A18EDA52</string>
+			<string>0C3A1BBCA282FA2262B4DD33DA00035C27E0B166</string>
 			<key>IDESourceControlWCCName</key>
 			<string>IOS_Example</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>16FEDE5D-FB02-47A3-AB2C-5A3FDBFE641F</string>
-			<key>IDESourceControlWCCName</key>
-			<string>smios</string>
 		</dict>
 	</array>
 </dict>

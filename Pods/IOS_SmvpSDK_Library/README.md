@@ -1,4 +1,4 @@
-IOS_SmvpSDK_Library
+IS_SmvpSDK_Library
 ==================
 call api:
 
@@ -29,6 +29,10 @@ video player:
 	volume control;
 
 	rendition selected;
+
+	play ad with pplayer configrations;
+
+	decryption of video;
 ============================
 video manager:
 

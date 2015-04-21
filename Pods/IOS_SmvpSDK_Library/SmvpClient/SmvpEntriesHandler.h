@@ -10,7 +10,7 @@
  @header SmvpEntriesHandler
  @abstract 视频管理类，由SmvpAPIClient保有唯一实例，负责视频的增删改查；
  @author smvp
- @version 1.2.9
+ @version 1.3.1
  */
 
 #import <Foundation/Foundation.h>
@@ -233,12 +233,12 @@
  @abstract	根据码率获取m3u8地址（可能是本地地址）；
  @discussion	根据码率获取m3u8地址；
  
- @param idString [IN|OUT] 视频id；
- @param renditionid [IN|OUT] renditionid
+ @param plInfo [IN|OUT] 视频信息；
+ @param rendition [IN|OUT] rendition
  
  @result URL地址；
  */
-- (NSURL *) getM3U8URL:(NSString *) idString withRendition:(SmvpRendition *)rendition;
+- (NSURL *) getM3U8URL:(SmvpVideoPlayInfor *) plInfo withRendition:(SmvpRendition *)rendition;
 
 /*!
  @method

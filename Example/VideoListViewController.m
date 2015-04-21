@@ -240,10 +240,10 @@
     SmvpVideo *video = self.videos[indexPath.row];
     if ([segue.destinationViewController isKindOfClass:[VideoDetailsViewController class]]) {
         if (![video.status isEqualToString: @"FINISHED"]) {
-            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Failed to load video."
-                                                        message:@"The video is not ready to play."
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"加载视频失败"
+                                                        message:@"加载失败！"
                                                         delegate:nil
-                                                        cancelButtonTitle:@"OK"
+                                                        cancelButtonTitle:@"确定"
                                                         otherButtonTitles:nil];
             [alertView show];
             return;

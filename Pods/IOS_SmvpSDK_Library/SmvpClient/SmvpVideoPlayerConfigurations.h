@@ -35,7 +35,7 @@
 
 @property(nonatomic, strong)NSString *control_bar_auto_hide_timeout;
 @property(nonatomic, strong)NSString *control_bar_mode;
-@property(nonatomic, strong)NSString *description;
+@property(nonatomic, strong)NSString *playerDescription;
 @property(nonatomic, strong)NSString *logo_overlay;
 @property(nonatomic, strong)NSString *name;
 @property(nonatomic, strong)NSString *preload_time;

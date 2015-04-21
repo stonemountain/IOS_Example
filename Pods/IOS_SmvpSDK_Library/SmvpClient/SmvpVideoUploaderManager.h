@@ -6,9 +6,19 @@
 //  Copyright (c) 2015 smvp. All rights reserved.
 //
 
+/*!
+ @header  SmvpVideoUploaderManager
+ @abstract 视频上传管理类；
+ @author smvp
+ @version 1.3.1
+ */
 #import <Foundation/Foundation.h>
 #import "SmvpVideoUploader.h"
 
+/*!
+ @class
+ @abstract 视频上传管理，提供视频上传的相关接口；
+ */
 @interface SmvpVideoUploaderManager : NSObject<SmvpVideoUploaderDelegate>
 
 

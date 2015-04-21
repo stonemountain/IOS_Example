@@ -10,7 +10,7 @@
  @header SmvpVideoUploader
  @abstract  视频上传类；
  @author smvp
- @version 1.2.7
+ @version 1.3.1
  */
 #import <Foundation/Foundation.h>
 #import "SmvpAPIClient.h"

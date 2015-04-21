@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Gpm-hC-yQE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Gpm-hC-yQE">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Video List View Controller - 我的视-->
@@ -24,7 +25,7 @@
                                             <rect key="frame" x="15" y="0.0" width="290" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -41,14 +42,14 @@
                                             <rect key="frame" x="15" y="3" width="34" height="22"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3gf-CF-gNO">
                                             <rect key="frame" x="15" y="25" width="43" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -99,7 +100,7 @@
                                 <rect key="frame" x="39" y="414" width="238" height="21"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FZO-j9-FMc">
@@ -179,10 +180,10 @@
                     </navigationItem>
                     <connections>
                         <outlet property="bitrate" destination="bsz-xI-cFW" id="nQe-9u-bEw"/>
-                        <outlet property="description" destination="F0E-Fb-htn" id="AAC-Mk-Eao"/>
-                        <outlet property="resolution" destination="zqZ-3z-gw1" id="6lp-Bj-2eG"/>
+                        <outlet property="resolution" destination="zqZ-3z-gw1" id="O16-UJ-gQu"/>
                         <outlet property="save" destination="FZO-j9-FMc" id="wQC-9E-Ilf"/>
                         <outlet property="status" destination="HGe-6p-OXh" id="TlV-n9-sWI"/>
+                        <outlet property="videoDescription" destination="F0E-Fb-htn" id="g3W-kk-ui5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Axb-9v-4Pi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -222,7 +223,7 @@
             </objects>
             <point key="canvasLocation" x="1054" y="-33"/>
         </scene>
-        <!--Video Downloader List View Controller - 下载列表-->
+        <!--下载列表-->
         <scene sceneID="fe7-JE-LCA">
             <objects>
                 <tableViewController id="she-sB-Vg8" customClass="VideoDownloaderListViewController" sceneMemberID="viewController">
@@ -318,6 +319,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="i0m-zL-Fi7"/>
+        <segue reference="uxv-ff-MOx"/>
     </inferredMetricsTieBreakers>
 </document>
