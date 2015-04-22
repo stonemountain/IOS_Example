@@ -2,7 +2,7 @@ IOS sdk example.
 
 You may need run 'pod install' or 'pod update' first.
 
-The latest version of 'IOS_SmvpSDK_Library' pod is '1.3.0'.
+The latest version of 'IOS_SmvpSDK_Library' pod is '1.3.12'.
 
 about 1.2.4:
  
