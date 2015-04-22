@@ -70,8 +70,8 @@
     if ([segue.destinationViewController isKindOfClass:[SmvpPlayerViewController class]]) {
         ivc = (SmvpPlayerViewController *)segue.destinationViewController;
         CGRect region = CGRectMake(0, 0, 320, 240);
-//        [ivc prepareVideo:self.video withApiClient:[SmvpHelper apiClient] andPlayerId:@"428082998184697028" inRegion:region];
-        [ivc prepareVideo:self.video withApiClient:[SmvpHelper apiClient] andPlayerId:@"107" inRegion:region];
+        [ivc prepareVideo:self.video withApiClient:[SmvpHelper apiClient] andPlayerId:@"428082998184697028" inRegion:region];
+//        [ivc prepareVideo:self.video withApiClient:[SmvpHelper apiClient] andPlayerId:@"107" inRegion:region];
     }
     else if ([segue.destinationViewController isKindOfClass:[VideoDownloaderListViewController class]])
     {
