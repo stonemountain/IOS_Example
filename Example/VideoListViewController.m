@@ -42,7 +42,8 @@
     [self fetchVideos];
 }
 
-- (void)selectVideoToUpload {
+- (void)selectVideoToUpload
+{
     [addButton setEnabled:YES];
 	UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
     imagePicker.delegate = self;
@@ -52,18 +53,21 @@
     [self presentViewController:imagePicker animated:YES completion:nil];
 }
 
-- (void) imagePickerControllerDidCancel: (UIImagePickerController *) picker {    
+- (void) imagePickerControllerDidCancel: (UIImagePickerController *) picker
+{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void) imagePickerController: (UIImagePickerController *) picker
-    didFinishPickingMediaWithInfo: (NSDictionary *) info {
+    didFinishPickingMediaWithInfo: (NSDictionary *) info
+{
     
     NSString *mediaType = [info objectForKey: UIImagePickerControllerMediaType];
     [self dismissViewControllerAnimated:NO completion:nil];
     
     // Handle a movie capture
-    if ([mediaType isEqualToString:(NSString*)kUTTypeMovie]) {
+    if ([mediaType isEqualToString:(NSString*)kUTTypeMovie])
+    {
         NSError *error = nil;
         NSURL *movieURL = [info objectForKey:UIImagePickerControllerMediaURL];
         [[SmvpHelper uploaderManager] upload:movieURL paramters:[[NSDictionary alloc] init] error:&error];
@@ -73,7 +77,8 @@
 
 
 
-- (void)handleError:(NSError *)error {
+- (void)handleError:(NSError *)error
+{
     NSString *errorMessage = [error localizedDescription];
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Failed to load videos."
 														message:errorMessage
@@ -83,12 +88,14 @@
     [alertView show];
 }
 
-- (void) setVideos:(NSArray *)videos {
+- (void) setVideos:(NSArray *)videos
+{
     _videos = videos;
     [self.tableView reloadData];
 }
 
-- (IBAction)fetchVideos {
+- (IBAction)fetchVideos
+{
     [self.refreshControl beginRefreshing]; // start the spinner
     SmvpAPIClient *client = [SmvpHelper apiClient];    // create a (non-main) queue to do fetch on
     dispatch_queue_t fetchQ = dispatch_queue_create("smvp video fetcher", NULL);
@@ -99,19 +106,23 @@
         @try {
             list = [[client entriesHandler] listWithFilter:nil InCatetory:nil OrderBy:nil error:&error];
         }
-        @catch (NSException *exception) {
+        @catch (NSException *exception)
+        {
             NSLog(@"%@",exception);
         }
-        @finally {
+        @finally
+        {
             
         }
         
         // update the Model (and thus our UI), but do so back on the main queue
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.refreshControl endRefreshing]; // stop the spinner
-            if (error) {
+            if (error)
+            {
                 [self handleError:error];
-            } else {
+            } else
+            {
                 self.videos = [list objectForKey:@"items"];
             }
         });
@@ -137,9 +148,11 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     NSUInteger count = [self.videos count];
-    if (count == 0) {
+    if (count == 0)
+    {
         return 1;
-    } else {
+    } else
+    {
         return count;
     }
 }
@@ -150,7 +163,8 @@
     static NSString *videoCellIdentifier = @"VideoCell";
     
     // Configure the cell...
-    if ([self.videos count] == 0 && indexPath.row == 0) {
+    if ([self.videos count] == 0 && indexPath.row == 0)
+    {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:loadingCellIdentifier];
 		cell.textLabel.text = @"Loading…";
 		return cell;
@@ -161,21 +175,26 @@
     cell.textLabel.text = [video title];
     cell.detailTextLabel.text = [@"Status: " stringByAppendingString:[video status]];
 
-    if (!video.thumbnailImage) {
-        if (video.thumbnailUrl && ![video.thumbnailUrl isKindOfClass:[NSNull class]] && self.tableView.dragging == NO && self.tableView.decelerating == NO) {
+    if (!video.thumbnailImage)
+    {
+        if (video.thumbnailUrl && ![video.thumbnailUrl isKindOfClass:[NSNull class]] && self.tableView.dragging == NO && self.tableView.decelerating == NO)
+        {
             [self startIconDownload:video forIndexPath:indexPath];
         }
         cell.imageView.image = [UIImage imageNamed:@"ThumbnailPlaceHolder"];
-    } else {
+    } else
+    {
         cell.imageView.image = video.thumbnailImage;
     }
     
     return cell;
 }
 
-- (void)startIconDownload:(SmvpVideo *)video forIndexPath:(NSIndexPath *)indexPath {
+- (void)startIconDownload:(SmvpVideo *)video forIndexPath:(NSIndexPath *)indexPath
+{
     SmvpImageDownloader *imageDownloader = [self.imageDownloadsInProgress objectForKey:indexPath];
-    if (imageDownloader == nil) {
+    if (imageDownloader == nil)
+    {
         imageDownloader = [[SmvpImageDownloader alloc] init];
         imageDownloader.imageUrl = video.thumbnailUrl;
         [imageDownloader setCompletionHandler:^(UIImage * image){
@@ -192,12 +211,16 @@
     }
 }
 
-- (void)loadImagesForOnscreenRows {
-    if ([self.videos count] > 0) {
+- (void)loadImagesForOnscreenRows
+{
+    if ([self.videos count] > 0)
+    {
         NSArray *visiblePaths = [self.tableView indexPathsForVisibleRows];
-        for (NSIndexPath *indexPath in visiblePaths) {
+        for (NSIndexPath *indexPath in visiblePaths)
+        {
             SmvpVideo *video = [self.videos objectAtIndex:indexPath.row];
-            if (!video.thumbnailImage) {
+            if (!video.thumbnailImage)
+            {
                 if (video.thumbnailUrl && ![video.thumbnailUrl isKindOfClass:[NSNull class]]) {
                     [self startIconDownload:video forIndexPath:indexPath];
                 }
@@ -210,8 +233,10 @@
 //	scrollViewDidEndDragging:willDecelerate:
 //  Load images for all onscreen rows when scrolling is finished.
 // -------------------------------------------------------------------------------
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
-    if (!decelerate) {
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    if (!decelerate)
+    {
         [self loadImagesForOnscreenRows];
     }
 }
@@ -219,7 +244,8 @@
 // -------------------------------------------------------------------------------
 //	scrollViewDidEndDecelerating:
 // -------------------------------------------------------------------------------
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
     [self loadImagesForOnscreenRows];
 }
 
@@ -234,12 +260,14 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSIndexPath *indexPath = nil;
-    if ([sender isKindOfClass:[UITableViewCell class]]) {
+    if ([sender isKindOfClass:[UITableViewCell class]])
+    {
         indexPath = [self.tableView indexPathForCell:sender];
     }
     SmvpVideo *video = self.videos[indexPath.row];
     if ([segue.destinationViewController isKindOfClass:[VideoDetailsViewController class]]) {
-        if (![video.status isEqualToString: @"FINISHED"]) {
+        if (![video.status isEqualToString: @"FINISHED"])
+        {
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"加载视频失败"
                                                         message:@"加载失败！"
                                                         delegate:nil

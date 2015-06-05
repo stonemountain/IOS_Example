@@ -50,7 +50,9 @@ about 1.3.1:
 	
 	encryption of video;
 
-
+about 1.3.2:
+	
+	fix bugs;
 
 [For more information](https://github.com/stonemountain/IOS_SmvpSDK_Library).
 

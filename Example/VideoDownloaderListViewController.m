@@ -45,7 +45,8 @@
 
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (editingStyle==UITableViewCellEditingStyleDelete) {
+    if (editingStyle==UITableViewCellEditingStyleDelete)
+    {
         NSInteger row = [indexPath row];
         SmvpVideoDownloader *downloader = (SmvpVideoDownloader *)[self.downloaderList objectAtIndex:row];
         [[SmvpHelper downloaderManager] cancel:downloader];
@@ -55,13 +56,15 @@
 }
 
 - (DownloaderTableViewCell *)tableView:(UITableView *)tableView
-         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     
     static NSString *TableSampleIdentifier = @"DownloaderCell";
     
     DownloaderTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:
                              TableSampleIdentifier];
-    if (cell == nil) {
+    if (cell == nil)
+    {
         cell = [[DownloaderTableViewCell alloc]
                 initWithStyle:UITableViewCellStyleDefault
                 reuseIdentifier:TableSampleIdentifier];

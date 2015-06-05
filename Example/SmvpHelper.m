@@ -16,17 +16,23 @@ static SmvpAPIClient *_apiClient;
 static SmvpVideoDownloaderManager *_downloaderManager;
 static SmvpVideoUploaderManager *_uploaderManager;
 
-+ (SmvpAPIClient *) apiClient {
-    if (!_apiClient) {
++ (SmvpAPIClient *) apiClient
+{
+    if (!_apiClient)
+    {
         
        _apiClient = [[SmvpAPIClient alloc] initWithToken:@"SJQ-7zgT_lOwaq816PPkkZqNDfl8TlaXoARoAQxaXAE="];
+//      dev
 //        _apiClient = [[SmvpAPIClient alloc] initWithToken:@"SJQ-7zgT_lOwaq816PPkkQRsTEepLlhulfJpjSCE30g="];
+//      staging
+//     _apiClient = [[SmvpAPIClient alloc] initWithToken:@"U2QDmmEY5tOSEb6qw3g_p5hsmCOXc92iJd304oUq7ITUh9GFH1c7E5ayBUXNNVE4"];
     }
     return _apiClient;
 }
 
 + (SmvpVideoDownloaderManager *) downloaderManager {
-    if (!_downloaderManager) {
+    if (!_downloaderManager)
+    {
         
         _downloaderManager = [[SmvpVideoDownloaderManager alloc] initWithClient:[SmvpHelper apiClient]];
     }
@@ -35,7 +41,8 @@ static SmvpVideoUploaderManager *_uploaderManager;
 
 + (SmvpVideoUploaderManager *)uploaderManager
 {
-    if (!_uploaderManager) {
+    if (!_uploaderManager)
+    {
         _uploaderManager = [[SmvpVideoUploaderManager alloc] initWithClient:[SmvpHelper apiClient]];
     }
     return _uploaderManager;

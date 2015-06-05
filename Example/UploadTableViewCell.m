@@ -13,7 +13,8 @@
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
+    if (self)
+    {
         // Initialization code
     }
     return self;
@@ -32,20 +33,24 @@
 
 
 
-- (void)uploadCanceled:(SmvpHttpConnection *)connection {
+- (void)uploadCanceled:(SmvpHttpConnection *)connection
+{
     [self.uploaderView removeFromSuperview];
     self.uploaderView = nil;
 }
 
-- (void)uploadFinished:(NSHTTPURLResponse *)response {
+- (void)uploadFinished:(NSHTTPURLResponse *)response
+{
     self.uploaderView.progressLabel.text = _uploader.status;
 }
 
-- (void)uploadFailed:(NSError *)error InResponse:(NSHTTPURLResponse *)response {
+- (void)uploadFailed:(NSError *)error InResponse:(NSHTTPURLResponse *)response
+{
    self.uploaderView.progressLabel.text = _uploader.status;
 }
 
-- (void)uploadDidUpdate:(double) progress {
+- (void)uploadDidUpdate:(double) progress
+{
     self.uploaderView.progressLabel.text = _uploader.status;
     [self.uploaderView setProgress:progress];
 }

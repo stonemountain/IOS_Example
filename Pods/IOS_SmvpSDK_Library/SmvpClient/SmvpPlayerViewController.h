@@ -48,7 +48,7 @@
  @abstract	seek；
  @discussion	seek到某一时间点开始播放；
  
- @param time [IN|OUT] 秒未单位的时间点；
+ @param time [IN|OUT] 秒为单位的时间点；
  */
 - (void) seek:(float) time;
 

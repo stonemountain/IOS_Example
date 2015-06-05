@@ -13,11 +13,13 @@
 
 static char THUMBNAIL_IMAGE=0;
 
--(UIImage *) thumbnailImage {
+-(UIImage *) thumbnailImage
+{
     return objc_getAssociatedObject(self, &THUMBNAIL_IMAGE);
 }
 
--(void) setThumbnailImage:(UIImage *)thumbnailImage {
+-(void) setThumbnailImage:(UIImage *)thumbnailImage
+{
     objc_setAssociatedObject(self, &THUMBNAIL_IMAGE, thumbnailImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 

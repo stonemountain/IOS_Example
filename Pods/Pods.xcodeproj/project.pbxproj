@@ -10,18 +10,7 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>00D601EEAD8009DCC43D7B46</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Pods-IOS_SmvpSDK_Library</string>
-			<key>target</key>
-			<string>1037E1EA1431A41FCF973B20</string>
-			<key>targetProxy</key>
-			<string>53EB1215B42361BBB2817FAF</string>
-		</dict>
-		<key>01430655BEC689639181A7B6</key>
+		<key>00E03916AE9E07C32739B390</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -30,13 +19,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>SmvpVideoUploader.h</string>
+			<string>SmvpStringPart.h</string>
 			<key>path</key>
-			<string>SmvpClient/SmvpVideoUploader.h</string>
+			<string>SmvpClient/SmvpStringPart.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>01E657CC10ECB9E4B39D1D2E</key>
+		<key>02049488FFCF3128EBBE281D</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -45,52 +34,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>SmvpImage.h</string>
+			<string>SmvpHttpMethod.h</string>
 			<key>path</key>
-			<string>SmvpClient/SmvpImage.h</string>
+			<string>SmvpClient/SmvpHttpMethod.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0660F9509770510554D8408E</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>16DA7B426F715FDE10B73028</string>
-			<key>buildPhases</key>
-			<array>
-				<string>89BABA7272CDAB99232D8186</string>
-				<string>FAC539FDC4333D0C6A8CCEFA</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>00D601EEAD8009DCC43D7B46</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>productName</key>
-			<string>Pods</string>
-			<key>productReference</key>
-			<string>FB755E1867A4CC8794FB9A4E</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>067C3258AF6E377CCC29B1AD</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>28FCCF92D0D96BF8CCC50DA7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0772C374086600CCC976E323</key>
+		<key>02735BBBEC365B7AFF47C853</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -99,41 +49,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>SmvpCategory.h</string>
+			<string>M3u8Handler.h</string>
 			<key>path</key>
-			<string>SmvpClient/SmvpCategory.h</string>
+			<string>SmvpClient/M3u8Handler.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>07A2BEF2D0C82E35282BE59A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EC8682767E48DB4292281E4A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>08F60C4B77A6DDB6AF346F29</key>
-		<dict>
-			<key>fileRef</key>
-			<string>64E95C866F0C50CF3B63F16E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09B6623964E361D992697644</key>
-		<dict>
-			<key>fileRef</key>
-			<string>590AF3C855E3FD2B5FC1D06A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0BDD1CFF19AFE118ADAFE8C0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F5F5073304AB6030B084341B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0CF8C4409B4883B27F72FAAE</key>
+		<key>043A7CEC1FD1743C414A7011</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -142,52 +64,60 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>SmvpPostMethod.h</string>
+			<string>SmvpEntriesHandler.h</string>
 			<key>path</key>
-			<string>SmvpClient/SmvpPostMethod.h</string>
+			<string>SmvpClient/SmvpEntriesHandler.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0E3BD8CF266395C761081E8E</key>
+		<key>044432669529CE2602EC7BDC</key>
 		<dict>
-			<key>fileRef</key>
-			<string>7020CFDB68251D673F562009</string>
+			<key>baseConfigurationReference</key>
+			<string>B86EBAEF4F8767BB1837D4FE</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1037E1EA1431A41FCF973B20</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>92FDA2892CDC07D6861852E1</string>
-			<key>buildPhases</key>
-			<array>
-				<string>7CC4EE34014747F296C83F6F</string>
-				<string>B3D16B5C32FEF2A85F8B13D4</string>
-				<string>BA86E9AE190FACDB61F98496</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
+			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>Pods-IOS_SmvpSDK_Library</string>
-			<key>productName</key>
-			<string>Pods-IOS_SmvpSDK_Library</string>
-			<key>productReference</key>
-			<string>397F524B9CFAA3F79A082C6E</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
+			<string>Debug</string>
 		</dict>
-		<key>13DE81E142EFBB4B267747F2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2185C46BB11CDAFEB23FFB34</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>150A4360C33F9D1A95F42749</key>
+		<key>054F2F7256170AABAB7BD9DB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -195,46 +125,73 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SegmentDownloader.h</string>
 			<key>path</key>
-			<string>Pods-IOS_SmvpSDK_Library-prefix.pch</string>
+			<string>SmvpClient/SegmentDownloader.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>16DA7B426F715FDE10B73028</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>5B5CE432B29A940D570DAD0E</string>
-				<string>D57F9526CF38E87071510F9F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>195E4DE8018FDBCE28F1D96C</key>
+		<key>08790605E1A6309870451C1A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>702E45CB24FA2C4E97B47678</string>
+			<string>71F30AB47ACB8FB0F9F44E58</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>1B94056276931F647CB5E20A</key>
+		<key>09C65A75366F08133047DE05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>45E14909A96854AB809258F8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0B9DCFBBF0411B1154D06818</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpPart.h</string>
 			<key>path</key>
-			<string>Pods-IOS_SmvpSDK_Library-dummy.m</string>
+			<string>SmvpClient/SmvpPart.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1C1EE9C8935511FB31F635CF</key>
+		<key>0D164CCC63B75DD29F94ACBD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpVideoDownloader.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpVideoDownloader.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F509A8268671172AF3B122F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpHttpResponse.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpHttpResponse.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>102897B683B869E4880FF271</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -249,14 +206,219 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1D65FDABF757EDC1D60249F3</key>
+		<key>1118FA516CBB9F3006FB94E2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Pods-IOS_SmvpSDK_Library</string>
+			<key>target</key>
+			<string>1866E634A0BAECC4A92AD39E</string>
+			<key>targetProxy</key>
+			<string>14BC1A09596485D33B92DEE1</string>
+		</dict>
+		<key>14BC1A09596485D33B92DEE1</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>A94D19015718FD20041A48F1</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>1866E634A0BAECC4A92AD39E</string>
+			<key>remoteInfo</key>
+			<string>Pods-IOS_SmvpSDK_Library</string>
+		</dict>
+		<key>14CBC2434FC059DEC4D9A5F0</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F63F43E7A6066A1A8BDC9CC6</string>
+			<string>D3C1E46B6280EFE488EC547F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>211733CA46041D63DF52106E</key>
+		<key>16172EDB62A755B0AE1CDC91</key>
+		<dict>
+			<key>fileRef</key>
+			<string>054F2F7256170AABAB7BD9DB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1866E634A0BAECC4A92AD39E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>CE499263BC3D88E3FBE1B2E6</string>
+			<key>buildPhases</key>
+			<array>
+				<string>3D45635E905C160EA42A97F2</string>
+				<string>8AE10358EA19B9CF0C695EFD</string>
+				<string>49047306546721CFD2D1348B</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-IOS_SmvpSDK_Library</string>
+			<key>productName</key>
+			<string>Pods-IOS_SmvpSDK_Library</string>
+			<key>productReference</key>
+			<string>9036D550BD3D73096B93C430</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>1895447A1A6630969CE8AEE1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AF88F56AF48AB8A2808396E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>18F4D742F0B93E2D29BA866C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpCategoriesHandler.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpCategoriesHandler.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>196DE7A524AD75309C1F1F97</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpGetMethod.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpGetMethod.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1D418561BB40C7607B4B763E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpRenditionUrl.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpRenditionUrl.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>230A9CC464AAEF98C6E91AC1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>47872FCA901C82DB281E24C1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>267B47EB90B95F3C088ED5BF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BB4D67396A25D3AF668014D5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>27792441B263FF6CE1B91549</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EF378C7715217748DB347FBB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>27A7B963B0C229FEBA965170</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BB4D67396A25D3AF668014D5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>27FF48B1B8BEB4778A234259</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DFE8E2F02C4D93889B96BE8C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>283DC6B10587CE54168C4E4C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0B9DCFBBF0411B1154D06818</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2E463EA3AE1BF53CC1B9C8A8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>672B91750741898CA75EBA77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>30429749FD5E414C60083484</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F509A8268671172AF3B122F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>308D17AA2232BDFBC0BE23C8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6AD1253AC0BC828AB073B780</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>33F32A75176C92A066F5EB85</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-environment.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3622E350902BBDADCDA5DE86</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpVideoPlayer.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpVideoPlayer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3858BE9EA3C53B7647D531D3</key>
 		<dict>
 			<key>buildSettings</key>
 			<dict>
@@ -323,42 +485,110 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>2185C46BB11CDAFEB23FFB34</key>
+		<key>3D45635E905C160EA42A97F2</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F8915605039EAEE74DD530CE</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpFilePart.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpFilePart.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
-		<key>2314728894E7A64B86489B1B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2395A42773841036CF4D97FE</key>
+		<key>40E0F1EE685D50D7D8387771</key>
 		<dict>
 			<key>fileRef</key>
-			<string>01E657CC10ECB9E4B39D1D2E</string>
+			<string>578362C36A3AE6060B5F2506</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>25B2D7E4816E91D4E87D2149</key>
+		<key>42F6FED5759383935156F619</key>
+		<dict>
+			<key>fileRef</key>
+			<string>85FE8EFE7307A716D13D50B6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>45E14909A96854AB809258F8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>45E2975636C097AE69365EBC</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F255E7A653345EE1BE8D2CE4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-IOS_SmvpSDK_Library/Pods-IOS_SmvpSDK_Library-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>473A9A45D518A2582DD2E832</key>
+		<dict>
+			<key>fileRef</key>
+			<string>00E03916AE9E07C32739B390</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>474030A518B94B098DD74212</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0D164CCC63B75DD29F94ACBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>47872FCA901C82DB281E24C1</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -367,13 +597,200 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>SmvpHttpMethod.h</string>
+			<string>SmvpPlayerView.h</string>
 			<key>path</key>
-			<string>SmvpClient/SmvpHttpMethod.h</string>
+			<string>SmvpClient/SmvpPlayerView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>274449BE69F01C98E643D62C</key>
+		<key>4828E72942B7C4C2958E50C8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AAB44F55245C516BA146D962</string>
+				<string>6098D11156E2FA8A1717BE34</string>
+				<string>86CD2E2FD7254DEE6E9B1C01</string>
+				<string>C13F0D17710B9AFB49A67BF0</string>
+				<string>65CB5BF244DCE546451F3B84</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>49047306546721CFD2D1348B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>5D8BEEBD6C306423F97406EB</string>
+				<string>16172EDB62A755B0AE1CDC91</string>
+				<string>14CBC2434FC059DEC4D9A5F0</string>
+				<string>4B5AB14D4B662F0B39ABF8C7</string>
+				<string>C170E4A71AB4B4F80706FB9D</string>
+				<string>AC867EFEDDF36E8401D79E91</string>
+				<string>40E0F1EE685D50D7D8387771</string>
+				<string>C5A35795FB036CB565904594</string>
+				<string>42F6FED5759383935156F619</string>
+				<string>D878BD80E410C682B6F4DFDC</string>
+				<string>CA122C37E377FFA2BFFBA668</string>
+				<string>ACAFAF4E514ABCC47AC1D9A3</string>
+				<string>27792441B263FF6CE1B91549</string>
+				<string>1895447A1A6630969CE8AEE1</string>
+				<string>FB8E0CCA76F5D1DF961AFCCD</string>
+				<string>30429749FD5E414C60083484</string>
+				<string>F0B2D69F9F3E327F4ECA4E64</string>
+				<string>308D17AA2232BDFBC0BE23C8</string>
+				<string>4C58903A039C76CDE3F80BDB</string>
+				<string>283DC6B10587CE54168C4E4C</string>
+				<string>230A9CC464AAEF98C6E91AC1</string>
+				<string>08790605E1A6309870451C1A</string>
+				<string>27FF48B1B8BEB4778A234259</string>
+				<string>C2C9E79FED83674B34545F4B</string>
+				<string>F56B5AA609CBE53BE50E60D9</string>
+				<string>473A9A45D518A2582DD2E832</string>
+				<string>FE834DED54B57C8C23A80958</string>
+				<string>474030A518B94B098DD74212</string>
+				<string>D4B2885A4D305FE0540238D1</string>
+				<string>2E463EA3AE1BF53CC1B9C8A8</string>
+				<string>8E5BC386321AF82F3EA96A3A</string>
+				<string>F573839706FC42D79ABD8926</string>
+				<string>680615077A2EE8A97F14611A</string>
+				<string>8E27620881B812BFADB94C1C</string>
+				<string>82E0BAB46C35AE00EAA57211</string>
+				<string>7CDB3FD9C2CCC0279B175EF2</string>
+				<string>8EC894610B3896C3D2C506E0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4B5AB14D4B662F0B39ABF8C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>102897B683B869E4880FF271</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4C58903A039C76CDE3F80BDB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A9FC34B77279673D0B2D72F5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>50963A3905DEC725979086BC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>51C7276F5615351E70950F49</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpVideo.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpVideo.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>566545EF04A7CF136FC96DA2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>02735BBBEC365B7AFF47C853</string>
+				<string>054F2F7256170AABAB7BD9DB</string>
+				<string>D3C1E46B6280EFE488EC547F</string>
+				<string>102897B683B869E4880FF271</string>
+				<string>18F4D742F0B93E2D29BA866C</string>
+				<string>5F727F5A4618A8AAB52DA3AA</string>
+				<string>578362C36A3AE6060B5F2506</string>
+				<string>043A7CEC1FD1743C414A7011</string>
+				<string>85FE8EFE7307A716D13D50B6</string>
+				<string>DC56FC85615B02947897560F</string>
+				<string>80DA962D6DB9A3A39588ABD9</string>
+				<string>196DE7A524AD75309C1F1F97</string>
+				<string>EF378C7715217748DB347FBB</string>
+				<string>AF88F56AF48AB8A2808396E1</string>
+				<string>02049488FFCF3128EBBE281D</string>
+				<string>0F509A8268671172AF3B122F</string>
+				<string>79A04B9A25FF770AEF0D14F8</string>
+				<string>6AD1253AC0BC828AB073B780</string>
+				<string>A9FC34B77279673D0B2D72F5</string>
+				<string>0B9DCFBBF0411B1154D06818</string>
+				<string>47872FCA901C82DB281E24C1</string>
+				<string>71F30AB47ACB8FB0F9F44E58</string>
+				<string>DFE8E2F02C4D93889B96BE8C</string>
+				<string>6F73F37DC963C3D7D5EAD9B3</string>
+				<string>1D418561BB40C7607B4B763E</string>
+				<string>00E03916AE9E07C32739B390</string>
+				<string>51C7276F5615351E70950F49</string>
+				<string>0D164CCC63B75DD29F94ACBD</string>
+				<string>5D7AF259673142E662C7B205</string>
+				<string>672B91750741898CA75EBA77</string>
+				<string>3622E350902BBDADCDA5DE86</string>
+				<string>AAD2E2CBFEF7E8C225026CB6</string>
+				<string>C00AEB5118FB728F79DD2583</string>
+				<string>671C4C934C15D660320EC633</string>
+				<string>924DC635515EE4788E1C2376</string>
+				<string>F3FF38B777BE364F48486332</string>
+				<string>E73F8686A1C2B4170BEFBC20</string>
+				<string>576681200E6844951228289A</string>
+				<string>68305107E71CE6B1E3A36060</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>IOS_SmvpSDK_Library</string>
+			<key>path</key>
+			<string>IOS_SmvpSDK_Library</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>576681200E6844951228289A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BD5ABF29A5812D037D46C50F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>578362C36A3AE6060B5F2506</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpClient.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpClient.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>58C438854DEB2E3F17453278</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -386,48 +803,139 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2815E03BFBF04DFD204858CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>39BDB11EAAD76CD56A5E5220</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>28FCCF92D0D96BF8CCC50DA7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>640E00489C03BB90EC767BAC</string>
-				<string>2314728894E7A64B86489B1B</string>
-				<string>702E45CB24FA2C4E97B47678</string>
-				<string>BB75577710D1B23435336969</string>
-				<string>85A9A54229335BBCE123EC2F</string>
-				<string>357A991128ABE52D4F34FB64</string>
-				<string>D86215B5D19BEC34FE5C93EA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>path</key>
-			<string>Target Support Files/Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>357A991128ABE52D4F34FB64</key>
+		<key>5D7AF259673142E662C7B205</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpVideoDownloaderManager.h</string>
 			<key>path</key>
-			<string>Pods.debug.xcconfig</string>
+			<string>SmvpClient/SmvpVideoDownloaderManager.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>36341020BC233C499F59EDD6</key>
+		<key>5D8BEEBD6C306423F97406EB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>02735BBBEC365B7AFF47C853</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5F727F5A4618A8AAB52DA3AA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpCategory.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpCategory.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6098D11156E2FA8A1717BE34</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>27A7B963B0C229FEBA965170</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65CB5BF244DCE546451F3B84</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CDC4042CCA53E66B48ACAC33</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65EFF9ED001220DE1737747B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>044432669529CE2602EC7BDC</string>
+				<string>765FB44055B9FEDFAB6C9E3E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>671C4C934C15D660320EC633</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpVideoPlayerViewController.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpVideoPlayerViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>672B91750741898CA75EBA77</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpVideoPlayInfor.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpVideoPlayInfor.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>680615077A2EE8A97F14611A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C00AEB5118FB728F79DD2583</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68305107E71CE6B1E3A36060</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>58C438854DEB2E3F17453278</string>
+				<string>F255E7A653345EE1BE8D2CE4</string>
+				<string>DF752EA45E3FF4404831F4D8</string>
+				<string>A21BBC8DE5319241E579382F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/Pods-IOS_SmvpSDK_Library</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6AD1253AC0BC828AB073B780</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -442,7 +950,279 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>364A1E5299B42082E683CF99</key>
+		<key>6B08675E64D3FA0CBAC1A4C4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F73F37DC963C3D7D5EAD9B3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpRendition.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpRendition.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>71F30AB47ACB8FB0F9F44E58</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpPlayerViewController.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpPlayerViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75889490F59AE533A984E665</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BB4D67396A25D3AF668014D5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>765FB44055B9FEDFAB6C9E3E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>973FE7ABFA683813BF222FB5</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>79A04B9A25FF770AEF0D14F8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpImage.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpImage.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7CDB3FD9C2CCC0279B175EF2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F3FF38B777BE364F48486332</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7CF0FFB61DCB438639B1CC30</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>80DA962D6DB9A3A39588ABD9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpFullScreenPlayerViewController.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpFullScreenPlayerViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82E0BAB46C35AE00EAA57211</key>
+		<dict>
+			<key>fileRef</key>
+			<string>924DC635515EE4788E1C2376</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>85FE8EFE7307A716D13D50B6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpFilePart.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpFilePart.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>86CD2E2FD7254DEE6E9B1C01</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>566545EF04A7CF136FC96DA2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>89237138133EA491266FA505</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>09C65A75366F08133047DE05</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8AE10358EA19B9CF0C695EFD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>267B47EB90B95F3C088ED5BF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8E27620881B812BFADB94C1C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>671C4C934C15D660320EC633</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8E5BC386321AF82F3EA96A3A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3622E350902BBDADCDA5DE86</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8E8D13D0721F017D52AC6E9C</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3858BE9EA3C53B7647D531D3</string>
+				<string>924EFECA1D34F57BA073439C</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>8EC894610B3896C3D2C506E0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E73F8686A1C2B4170BEFBC20</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9036D550BD3D73096B93C430</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-IOS_SmvpSDK_Library.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>924DC635515EE4788E1C2376</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpVideoUploader.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpVideoUploader.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>924EFECA1D34F57BA073439C</key>
 		<dict>
 			<key>buildSettings</key>
 			<dict>
@@ -504,60 +1284,7 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>3918A958BA33FC6690936DF1</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F3CDD82E769DC2499AF6DBF3</string>
-				<string>474AEEE7F470F11CF86D3D87</string>
-				<string>FACC6A4F8D521F53021B18A0</string>
-				<string>1C1EE9C8935511FB31F635CF</string>
-				<string>B78C3AB0C8D78C2CDB6B9D58</string>
-				<string>0772C374086600CCC976E323</string>
-				<string>590AF3C855E3FD2B5FC1D06A</string>
-				<string>64E95C866F0C50CF3B63F16E</string>
-				<string>2185C46BB11CDAFEB23FFB34</string>
-				<string>58CF90F42978FBC2D04EFC27</string>
-				<string>D24742F3B1296D082497AB6A</string>
-				<string>42583D29963F6C33A6062AE8</string>
-				<string>7DCF0E59487EA23F5E600C08</string>
-				<string>52ABC9E848204D96EB0CF9A6</string>
-				<string>25B2D7E4816E91D4E87D2149</string>
-				<string>C2216FBC3781541D880A8B99</string>
-				<string>01E657CC10ECB9E4B39D1D2E</string>
-				<string>36341020BC233C499F59EDD6</string>
-				<string>F63F43E7A6066A1A8BDC9CC6</string>
-				<string>9F1A33349877A0B7380654DB</string>
-				<string>C35C0E90A5456FB6C838FA18</string>
-				<string>C55F5834CF1722F9B8DCDCFA</string>
-				<string>0CF8C4409B4883B27F72FAAE</string>
-				<string>61A2B017B9FA449E2BF51790</string>
-				<string>CA3A9F5EA39229669CDE1AC2</string>
-				<string>7020CFDB68251D673F562009</string>
-				<string>804185265EF576BEDA1FF8F6</string>
-				<string>63A849F2978BF867B8752753</string>
-				<string>75898E9D0D105F29FC964815</string>
-				<string>7E66A894EBD7463DE7DFAAEB</string>
-				<string>685BABB92B97C845B20E6673</string>
-				<string>8341B7D2FCC7938DBFFDCA2C</string>
-				<string>F5F5073304AB6030B084341B</string>
-				<string>574ADDDF252F768C1A2E5890</string>
-				<string>01430655BEC689639181A7B6</string>
-				<string>AC0C7CE2CC578E5F34F7AEA2</string>
-				<string>EC8682767E48DB4292281E4A</string>
-				<string>EFF48028EECE1EBCBC278A76</string>
-				<string>CFDAF1C1EC4042F8DFDA47B6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>IOS_SmvpSDK_Library</string>
-			<key>path</key>
-			<string>IOS_SmvpSDK_Library</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3918D88FA9DF114D58708583</key>
+		<key>973FE7ABFA683813BF222FB5</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -566,37 +1293,11 @@
 			<key>lastKnownFileType</key>
 			<string>text.xcconfig</string>
 			<key>path</key>
-			<string>Pods-IOS_SmvpSDK_Library-Private.xcconfig</string>
+			<string>Pods.release.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>397F524B9CFAA3F79A082C6E</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-IOS_SmvpSDK_Library.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>39BDB11EAAD76CD56A5E5220</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>42583D29963F6C33A6062AE8</key>
+		<key>A21BBC8DE5319241E579382F</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -604,644 +1305,12 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpGetMethod.h</string>
 			<key>path</key>
-			<string>SmvpClient/SmvpGetMethod.h</string>
+			<string>Pods-IOS_SmvpSDK_Library-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>42919DBB46180C47D23D56B8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F3CDD82E769DC2499AF6DBF3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>43A77BCD45220FAE80BAD032</key>
-		<dict>
-			<key>fileRef</key>
-			<string>25B2D7E4816E91D4E87D2149</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>474AEEE7F470F11CF86D3D87</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SegmentDownloader.h</string>
-			<key>path</key>
-			<string>SmvpClient/SegmentDownloader.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4AB7184FEDDE30799A29B9E0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B78C3AB0C8D78C2CDB6B9D58</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>511B0A899A0085A85CD0D478</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AC0C7CE2CC578E5F34F7AEA2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>52ABC9E848204D96EB0CF9A6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpHttpConnection.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpHttpConnection.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>53EB1215B42361BBB2817FAF</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>AB9055302E29689CFD5AB889</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>1037E1EA1431A41FCF973B20</string>
-			<key>remoteInfo</key>
-			<string>Pods-IOS_SmvpSDK_Library</string>
-		</dict>
-		<key>573D279AF50F8DA6CFEAD59C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>36341020BC233C499F59EDD6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>574ADDDF252F768C1A2E5890</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpVideoPlayerViewController.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpVideoPlayerViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>576BB1964BBF7602F0E6FA15</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>211733CA46041D63DF52106E</string>
-				<string>364A1E5299B42082E683CF99</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>58CF90F42978FBC2D04EFC27</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpFullScreenPlayerView.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpFullScreenPlayerView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>590AF3C855E3FD2B5FC1D06A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpClient.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpClient.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5B5CE432B29A940D570DAD0E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>357A991128ABE52D4F34FB64</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>5CA5ABE961D372BEC8D1D4C8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D24742F3B1296D082497AB6A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5E744736B948448217AED56E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>58CF90F42978FBC2D04EFC27</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6134AF0A532B556D38DFC6C3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>474AEEE7F470F11CF86D3D87</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>61A2B017B9FA449E2BF51790</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpRendition.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpRendition.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63A849F2978BF867B8752753</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpVideoDownloader.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpVideoDownloader.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>640E00489C03BB90EC767BAC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>64C52BCABB2F1F2389888884</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3918D88FA9DF114D58708583</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-IOS_SmvpSDK_Library/Pods-IOS_SmvpSDK_Library-prefix.pch</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>64E95C866F0C50CF3B63F16E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpEntriesHandler.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpEntriesHandler.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>685BABB92B97C845B20E6673</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpVideoPlayer.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpVideoPlayer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>697FAB3CFD20CE03DCD1283E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9F1A33349877A0B7380654DB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6B53B554D7338FF6D76E4107</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FACC6A4F8D521F53021B18A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7020CFDB68251D673F562009</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpStringPart.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpStringPart.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>702E45CB24FA2C4E97B47678</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>75898E9D0D105F29FC964815</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpVideoDownloaderManager.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpVideoDownloaderManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7AAA82C28D6506B4F3E72D14</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>archive.ar</string>
-			<key>path</key>
-			<string>libSmvpClient.a</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7CC4EE34014747F296C83F6F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CF742EDFD2A2B156F04FCCF4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>7DCF0E59487EA23F5E600C08</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpHttpClient.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpHttpClient.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7E66A894EBD7463DE7DFAAEB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpVideoPlayInfor.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpVideoPlayInfor.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>804185265EF576BEDA1FF8F6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpVideo.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpVideo.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8341B7D2FCC7938DBFFDCA2C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpVideoPlayerConfigurations.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpVideoPlayerConfigurations.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>855F9AB14099D391AE87CC83</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3918D88FA9DF114D58708583</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-IOS_SmvpSDK_Library/Pods-IOS_SmvpSDK_Library-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>85A9A54229335BBCE123EC2F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>89BABA7272CDAB99232D8186</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>195E4DE8018FDBCE28F1D96C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9126B28816C68758CA2B719B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7DCF0E59487EA23F5E600C08</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>92FDA2892CDC07D6861852E1</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>855F9AB14099D391AE87CC83</string>
-				<string>64C52BCABB2F1F2389888884</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>94320AD37F15DAE5FF81FF7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>42583D29963F6C33A6062AE8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>94E1296DFB1418B637947763</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7E66A894EBD7463DE7DFAAEB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9A688EA3110A3D04D2B975D3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>574ADDDF252F768C1A2E5890</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9EEEF6A0EBAB6C0745E9D58C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C38E5AE5205570D617886F93</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9F1A33349877A0B7380654DB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpPart.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpPart.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A0E1F41A85B29180125A0A10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0772C374086600CCC976E323</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A7EC12B8BA8E6D047DCE5AE5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>804185265EF576BEDA1FF8F6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB9055302E29689CFD5AB889</key>
+		<key>A94D19015718FD20041A48F1</key>
 		<dict>
 			<key>attributes</key>
 			<dict>
@@ -1249,7 +1318,7 @@
 				<string>0510</string>
 			</dict>
 			<key>buildConfigurationList</key>
-			<string>576BB1964BBF7602F0E6FA15</string>
+			<string>8E8D13D0721F017D52AC6E9C</string>
 			<key>compatibilityVersion</key>
 			<string>Xcode 3.2</string>
 			<key>developmentRegion</key>
@@ -1263,9 +1332,9 @@
 				<string>en</string>
 			</array>
 			<key>mainGroup</key>
-			<string>FD164BD143B63FD5DC2F2070</string>
+			<string>4828E72942B7C4C2958E50C8</string>
 			<key>productRefGroup</key>
-			<string>F87ABB7FCA0FA5E25D88659C</string>
+			<string>C13F0D17710B9AFB49A67BF0</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -1274,11 +1343,11 @@
 			<string></string>
 			<key>targets</key>
 			<array>
-				<string>0660F9509770510554D8408E</string>
-				<string>1037E1EA1431A41FCF973B20</string>
+				<string>FAB8A40DCB0422F7DBC38C2D</string>
+				<string>1866E634A0BAECC4A92AD39E</string>
 			</array>
 		</dict>
-		<key>AC0C7CE2CC578E5F34F7AEA2</key>
+		<key>A9FC34B77279673D0B2D72F5</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1287,144 +1356,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>SmvpVideoUploaderManager.h</string>
+			<string>SmvpMultipartMethod.h</string>
 			<key>path</key>
-			<string>SmvpClient/SmvpVideoUploaderManager.h</string>
+			<string>SmvpClient/SmvpMultipartMethod.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>AF65414C809CA00F79B3AFDA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>01430655BEC689639181A7B6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B00FC534E331C6058E251C97</key>
-		<dict>
-			<key>fileRef</key>
-			<string>52ABC9E848204D96EB0CF9A6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B229C0ADE8D5115B317B011C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0CF8C4409B4883B27F72FAAE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B3D16B5C32FEF2A85F8B13D4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BE781C4FC4AA0844D46FAFE7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B68C9487074E62559C47F933</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3918A958BA33FC6690936DF1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B781E4A2BD7F2A04CB868D59</key>
-		<dict>
-			<key>fileRef</key>
-			<string>685BABB92B97C845B20E6673</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B78C3AB0C8D78C2CDB6B9D58</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpCategoriesHandler.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpCategoriesHandler.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BA86E9AE190FACDB61F98496</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>42919DBB46180C47D23D56B8</string>
-				<string>6134AF0A532B556D38DFC6C3</string>
-				<string>6B53B554D7338FF6D76E4107</string>
-				<string>BD57E07393E11B96B8577673</string>
-				<string>4AB7184FEDDE30799A29B9E0</string>
-				<string>A0E1F41A85B29180125A0A10</string>
-				<string>09B6623964E361D992697644</string>
-				<string>08F60C4B77A6DDB6AF346F29</string>
-				<string>13DE81E142EFBB4B267747F2</string>
-				<string>5E744736B948448217AED56E</string>
-				<string>5CA5ABE961D372BEC8D1D4C8</string>
-				<string>94320AD37F15DAE5FF81FF7F</string>
-				<string>9126B28816C68758CA2B719B</string>
-				<string>B00FC534E331C6058E251C97</string>
-				<string>43A77BCD45220FAE80BAD032</string>
-				<string>F2D8721AFB80E8BC270D5BCE</string>
-				<string>2395A42773841036CF4D97FE</string>
-				<string>573D279AF50F8DA6CFEAD59C</string>
-				<string>1D65FDABF757EDC1D60249F3</string>
-				<string>697FAB3CFD20CE03DCD1283E</string>
-				<string>D51211B9A4CD6352B550AE95</string>
-				<string>FE28EE95D9C772DBB101CC26</string>
-				<string>B229C0ADE8D5115B317B011C</string>
-				<string>D25AF937784FA39A2BDBA1D6</string>
-				<string>BD7ECBBF0A67509E2AEFAF28</string>
-				<string>0E3BD8CF266395C761081E8E</string>
-				<string>A7EC12B8BA8E6D047DCE5AE5</string>
-				<string>FC3F7C32CE00F42843B0512F</string>
-				<string>C8807CE45F93EDF9844B3DC9</string>
-				<string>94E1296DFB1418B637947763</string>
-				<string>B781E4A2BD7F2A04CB868D59</string>
-				<string>F07764C101BC06C6BFB66EB6</string>
-				<string>0BDD1CFF19AFE118ADAFE8C0</string>
-				<string>9A688EA3110A3D04D2B975D3</string>
-				<string>AF65414C809CA00F79B3AFDA</string>
-				<string>511B0A899A0085A85CD0D478</string>
-				<string>07A2BEF2D0C82E35282BE59A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BB75577710D1B23435336969</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-environment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BBFCAA588F969A6E6D642C76</key>
+		<key>AAB44F55245C516BA146D962</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1441,28 +1379,7 @@
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
 		</dict>
-		<key>BD57E07393E11B96B8577673</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1C1EE9C8935511FB31F635CF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BD7ECBBF0A67509E2AEFAF28</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CA3A9F5EA39229669CDE1AC2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE781C4FC4AA0844D46FAFE7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>39BDB11EAAD76CD56A5E5220</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C2216FBC3781541D880A8B99</key>
+		<key>AAD2E2CBFEF7E8C225026CB6</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1471,13 +1388,27 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>SmvpHttpResponse.h</string>
+			<string>SmvpVideoPlayerConfigurations.h</string>
 			<key>path</key>
-			<string>SmvpClient/SmvpHttpResponse.h</string>
+			<string>SmvpClient/SmvpVideoPlayerConfigurations.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C35C0E90A5456FB6C838FA18</key>
+		<key>AC867EFEDDF36E8401D79E91</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5F727F5A4618A8AAB52DA3AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ACAFAF4E514ABCC47AC1D9A3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>196DE7A524AD75309C1F1F97</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AF88F56AF48AB8A2808396E1</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1486,120 +1417,105 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>SmvpPlayerView.h</string>
+			<string>SmvpHttpConnection.h</string>
 			<key>path</key>
-			<string>SmvpClient/SmvpPlayerView.h</string>
+			<string>SmvpClient/SmvpHttpConnection.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C38E5AE5205570D617886F93</key>
+		<key>B86EBAEF4F8767BB1837D4FE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BB4D67396A25D3AF668014D5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>BD5ABF29A5812D037D46C50F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>path</key>
+			<string>libSmvpClient.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C00AEB5118FB728F79DD2583</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpVideoPlayerView.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpVideoPlayerView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C13F0D17710B9AFB49A67BF0</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>39BDB11EAAD76CD56A5E5220</string>
+				<string>F07C850FD8E4024C97CC10B8</string>
+				<string>9036D550BD3D73096B93C430</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>iOS</string>
+			<string>Products</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C55F5834CF1722F9B8DCDCFA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpPlayerViewController.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpPlayerViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C8807CE45F93EDF9844B3DC9</key>
+		<key>C170E4A71AB4B4F80706FB9D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>75898E9D0D105F29FC964815</string>
+			<string>18F4D742F0B93E2D29BA866C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>CA3A9F5EA39229669CDE1AC2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpRenditionUrl.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpRenditionUrl.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CF742EDFD2A2B156F04FCCF4</key>
+		<key>C2C9E79FED83674B34545F4B</key>
 		<dict>
 			<key>fileRef</key>
-			<string>1B94056276931F647CB5E20A</string>
+			<string>6F73F37DC963C3D7D5EAD9B3</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>CFDAF1C1EC4042F8DFDA47B6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>274449BE69F01C98E643D62C</string>
-				<string>3918D88FA9DF114D58708583</string>
-				<string>1B94056276931F647CB5E20A</string>
-				<string>150A4360C33F9D1A95F42749</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/Pods-IOS_SmvpSDK_Library</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D24742F3B1296D082497AB6A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpFullScreenPlayerViewController.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpFullScreenPlayerViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D25AF937784FA39A2BDBA1D6</key>
+		<key>C5A35795FB036CB565904594</key>
 		<dict>
 			<key>fileRef</key>
-			<string>61A2B017B9FA449E2BF51790</string>
+			<string>043A7CEC1FD1743C414A7011</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>D51211B9A4CD6352B550AE95</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C35C0E90A5456FB6C838FA18</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D57F9526CF38E87071510F9F</key>
+		<key>CA0A59BB348E04B1274DB769</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>D86215B5D19BEC34FE5C93EA</string>
+			<string>F255E7A653345EE1BE8D2CE4</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_SEARCH_USER_PATHS</key>
@@ -1610,6 +1526,8 @@
 				<string>/tmp/xcodeproj.dst</string>
 				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
 				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-IOS_SmvpSDK_Library/Pods-IOS_SmvpSDK_Library-prefix.pch</string>
 				<key>INSTALL_PATH</key>
 				<string>$(BUILT_PRODUCTS_DIR)</string>
 				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
@@ -1644,134 +1562,49 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>D86215B5D19BEC34FE5C93EA</key>
+		<key>CA122C37E377FFA2BFFBA668</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>80DA962D6DB9A3A39588ABD9</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
 		</dict>
-		<key>EC8682767E48DB4292281E4A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>VideoDownloader.h</string>
-			<key>path</key>
-			<string>SmvpClient/VideoDownloader.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EFF48028EECE1EBCBC278A76</key>
+		<key>CDC4042CCA53E66B48ACAC33</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>7AAA82C28D6506B4F3E72D14</string>
+				<string>50963A3905DEC725979086BC</string>
+				<string>7CF0FFB61DCB438639B1CC30</string>
+				<string>45E14909A96854AB809258F8</string>
+				<string>33F32A75176C92A066F5EB85</string>
+				<string>6B08675E64D3FA0CBAC1A4C4</string>
+				<string>B86EBAEF4F8767BB1837D4FE</string>
+				<string>973FE7ABFA683813BF222FB5</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F07764C101BC06C6BFB66EB6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8341B7D2FCC7938DBFFDCA2C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F2D8721AFB80E8BC270D5BCE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C2216FBC3781541D880A8B99</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F3CDD82E769DC2499AF6DBF3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>M3u8Handler.h</string>
+			<string>Pods</string>
 			<key>path</key>
-			<string>SmvpClient/M3u8Handler.h</string>
+			<string>Target Support Files/Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F5F5073304AB6030B084341B</key>
+		<key>CE499263BC3D88E3FBE1B2E6</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpVideoPlayerView.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpVideoPlayerView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F63F43E7A6066A1A8BDC9CC6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SmvpMultipartMethod.h</string>
-			<key>path</key>
-			<string>SmvpClient/SmvpMultipartMethod.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F87ABB7FCA0FA5E25D88659C</key>
-		<dict>
-			<key>children</key>
+			<key>buildConfigurations</key>
 			<array>
-				<string>FB755E1867A4CC8794FB9A4E</string>
-				<string>397F524B9CFAA3F79A082C6E</string>
+				<string>45E2975636C097AE69365EBC</string>
+				<string>CA0A59BB348E04B1274DB769</string>
 			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAC539FDC4333D0C6A8CCEFA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2815E03BFBF04DFD204858CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
+			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
 		</dict>
-		<key>FACC6A4F8D521F53021B18A0</key>
+		<key>D3C1E46B6280EFE488EC547F</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1786,7 +1619,107 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>FB755E1867A4CC8794FB9A4E</key>
+		<key>D4B2885A4D305FE0540238D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5D7AF259673142E662C7B205</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D878BD80E410C682B6F4DFDC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DC56FC85615B02947897560F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DC56FC85615B02947897560F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpFullScreenPlayerView.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpFullScreenPlayerView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF752EA45E3FF4404831F4D8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-IOS_SmvpSDK_Library-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DFE8E2F02C4D93889B96BE8C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpPostMethod.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpPostMethod.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E29C93936530E1BCF162E70E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>75889490F59AE533A984E665</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E73F8686A1C2B4170BEFBC20</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>VideoDownloader.h</string>
+			<key>path</key>
+			<string>SmvpClient/VideoDownloader.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EF378C7715217748DB347FBB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpHttpClient.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpHttpClient.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F07C850FD8E4024C97CC10B8</key>
 		<dict>
 			<key>explicitFileType</key>
 			<string>archive.ar</string>
@@ -1799,37 +1732,104 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>FC3F7C32CE00F42843B0512F</key>
+		<key>F0B2D69F9F3E327F4ECA4E64</key>
 		<dict>
 			<key>fileRef</key>
-			<string>63A849F2978BF867B8752753</string>
+			<string>79A04B9A25FF770AEF0D14F8</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>FD164BD143B63FD5DC2F2070</key>
+		<key>F255E7A653345EE1BE8D2CE4</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>BBFCAA588F969A6E6D642C76</string>
-				<string>9EEEF6A0EBAB6C0745E9D58C</string>
-				<string>B68C9487074E62559C47F933</string>
-				<string>F87ABB7FCA0FA5E25D88659C</string>
-				<string>067C3258AF6E377CCC29B1AD</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-IOS_SmvpSDK_Library-Private.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>FE28EE95D9C772DBB101CC26</key>
+		<key>F3FF38B777BE364F48486332</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SmvpVideoUploaderManager.h</string>
+			<key>path</key>
+			<string>SmvpClient/SmvpVideoUploaderManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F56B5AA609CBE53BE50E60D9</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C55F5834CF1722F9B8DCDCFA</string>
+			<string>1D418561BB40C7607B4B763E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F573839706FC42D79ABD8926</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AAD2E2CBFEF7E8C225026CB6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F8915605039EAEE74DD530CE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF752EA45E3FF4404831F4D8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FAB8A40DCB0422F7DBC38C2D</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>65EFF9ED001220DE1737747B</string>
+			<key>buildPhases</key>
+			<array>
+				<string>89237138133EA491266FA505</string>
+				<string>E29C93936530E1BCF162E70E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>1118FA516CBB9F3006FB94E2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>productName</key>
+			<string>Pods</string>
+			<key>productReference</key>
+			<string>F07C850FD8E4024C97CC10B8</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>FB8E0CCA76F5D1DF961AFCCD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>02049488FFCF3128EBBE281D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FE834DED54B57C8C23A80958</key>
+		<dict>
+			<key>fileRef</key>
+			<string>51C7276F5615351E70950F49</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>
-	<string>AB9055302E29689CFD5AB889</string>
+	<string>A94D19015718FD20041A48F1</string>
 </dict>
 </plist>

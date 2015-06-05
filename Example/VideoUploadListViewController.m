@@ -20,7 +20,8 @@
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
-    if (self) {
+    if (self)
+    {
         // Custom initialization
     }
     return self;
@@ -60,7 +61,8 @@
 
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (editingStyle==UITableViewCellEditingStyleDelete) {
+    if (editingStyle==UITableViewCellEditingStyleDelete)
+    {
         NSInteger row = [indexPath row];
         SmvpVideoUploader *uploader = (SmvpVideoUploader *)[self.uploadList objectAtIndex:row];
         [[SmvpHelper uploaderManager] cancel:uploader];
@@ -70,13 +72,15 @@
 }
 
 - (UploadTableViewCell *)tableView:(UITableView *)tableView
-                 cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+                 cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     
     static NSString *TableSampleIdentifier = @"uploaderCell";
     
     UploadTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:
                                      TableSampleIdentifier];
-    if (cell == nil) {
+    if (cell == nil)
+    {
         cell = [[UploadTableViewCell alloc]
                 initWithStyle:UITableViewCellStyleDefault
                 reuseIdentifier:TableSampleIdentifier];

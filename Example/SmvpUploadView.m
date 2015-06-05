@@ -19,9 +19,11 @@
 
 @implementation SmvpUploadView
 
-- (id)initWithTableView:(UITableViewCell *)tableViewCell message:(NSString *)uploadMsg {
+- (id)initWithTableView:(UITableViewCell *)tableViewCell message:(NSString *)uploadMsg
+{
     self = [super initWithFrame:CGRectMake(0.0, 0.0, 320.0, 54.0)];
-    if (self) {
+    if (self)
+    {
 		self.tableViewCell = tableViewCell;
 		self.progress = 0.0f;
 		
@@ -64,12 +66,14 @@
     return self;
 }
 
-- (void)setProgress:(CGFloat)progress {
+- (void)setProgress:(CGFloat)progress
+{
 	CGFloat prog = MIN(progress, 1.0);
     
 	[self.progressView setProgress:prog animated:YES];
 	
-	if (prog == 1.0) {
+	if (prog == 1.0)
+    {
 //		self.cancelButton.enabled = NO;
 	}
 }

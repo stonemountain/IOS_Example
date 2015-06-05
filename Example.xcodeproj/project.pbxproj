@@ -179,7 +179,6 @@
 				F9933F38186C16EE00283A37 /* AppDelegate.h */,
 				F9933F39186C16EE00283A37 /* AppDelegate.m */,
 				F9933F3B186C16EE00283A37 /* Main.storyboard */,
-				F9933F41186C16EE00283A37 /* Images.xcassets */,
 				F911B27D18750A1700778B05 /* SmvpVideo+Image.h */,
 				F911B27E18750A1700778B05 /* SmvpVideo+Image.m */,
 				F9933F30186C16EE00283A37 /* Supporting Files */,
@@ -206,6 +205,7 @@
 		F9933F30186C16EE00283A37 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F9933F41186C16EE00283A37 /* Images.xcassets */,
 				F9933F31186C16EE00283A37 /* Example-Info.plist */,
 				F9933F32186C16EE00283A37 /* InfoPlist.strings */,
 				F9933F35186C16EE00283A37 /* main.m */,

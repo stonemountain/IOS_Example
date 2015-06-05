@@ -23,7 +23,8 @@
     SmvpPlayerViewController *ivc;
 }
 
-- (void) setVideo:(SmvpVideo *)video {
+- (void) setVideo:(SmvpVideo *)video
+{
     _video = video;
 }
 
@@ -42,7 +43,8 @@
     
 }
 
-- (IBAction)saveVideo:(id)sender {
+- (IBAction)saveVideo:(id)sender
+{
     NSError *error = nil;
     SmvpRendition *rendition = [[[SmvpHelper apiClient].entriesHandler getPlayInfor:self.video.entryId error:&error].renditions objectAtIndex:0];
     if(![[SmvpHelper downloaderManager] download:rendition error:&error])
@@ -67,11 +69,15 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.destinationViewController isKindOfClass:[SmvpPlayerViewController class]]) {
+    if ([segue.destinationViewController isKindOfClass:[SmvpPlayerViewController class]])
+    {
         ivc = (SmvpPlayerViewController *)segue.destinationViewController;
         CGRect region = CGRectMake(0, 0, 320, 240);
-        [ivc prepareVideo:self.video withApiClient:[SmvpHelper apiClient] andPlayerId:@"428082998184697028" inRegion:region];
+        [ivc prepareVideo:self.video withApiClient:[SmvpHelper apiClient] andPlayerId:@"464869259962649779" inRegion:region];
+//        dev
 //        [ivc prepareVideo:self.video withApiClient:[SmvpHelper apiClient] andPlayerId:@"107" inRegion:region];
+//        staging
+//        [ivc prepareVideo:self.video withApiClient:[SmvpHelper apiClient] andPlayerId:@"622181572574391587" inRegion:region];
     }
     else if ([segue.destinationViewController isKindOfClass:[VideoDownloaderListViewController class]])
     {
@@ -80,19 +86,23 @@
     }
 }
 
-- (IBAction)play:(id)sender {
+- (IBAction)play:(id)sender
+{
     [ivc play];
 }
 
-- (IBAction)pause:(id)sender {
+- (IBAction)pause:(id)sender
+{
     [ivc pause];
 }
 
-- (IBAction)seek10:(id)sender {
+- (IBAction)seek10:(id)sender
+{
     [ivc seek:10];
 }
 
-- (IBAction)seek1:(id)sender {
+- (IBAction)seek1:(id)sender
+{
     [ivc seek:1];
 }
 
@@ -100,39 +110,40 @@
 - (void) videoStart:(NSNotification*) notification
 {
     id obj = [notification userInfo];
-    NSLog(@"videoStart obj:%@",obj);
+    NSLog(@"videoStart obj:\n%@",obj);
     _status.text = [NSString stringWithFormat:@"videoStart:%@",obj];
 }
 
 - (void) videoPlay:(NSNotification*) notification
 {
     id obj = [notification userInfo];
-    NSLog(@"videoPlay obj:%@",obj);
+    NSLog(@"videoPlay obj:\n%@",obj);
     _status.text = [NSString stringWithFormat:@"videoPlay:%@",obj];
 }
 
 - (void) videoPause:(NSNotification*) notification
 {
     id obj = [notification userInfo];
-    NSLog(@"videoPause obj:%@",obj);
+    NSLog(@"videoPause obj:\n%@",obj);
     _status.text = [NSString stringWithFormat:@"videoPause:%@",obj];
 }
 
 - (void) videoComplete:(NSNotification*) notification
 {
     id obj = [notification userInfo];
-    NSLog(@"videoComplete obj:%@",obj);
+    NSLog(@"videoComplete obj:\n%@",obj);
     _status.text = [NSString stringWithFormat:@"videoComplete:%@",obj];
 }
 
 - (void) videoProgress:(NSNotification*) notification
 {
     id obj = [notification userInfo];
-    NSLog(@"videoProgress obj:%@",obj);
+    NSLog(@"videoProgress obj:\n%@",obj);
     _status.text = [NSString stringWithFormat:@"videoProgress:%@",obj];
 }
 
--(void)dealloc{
+-(void)dealloc
+{
     
 }
 
